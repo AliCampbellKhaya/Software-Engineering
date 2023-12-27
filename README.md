@@ -1,6 +1,6 @@
 # Software Engineering
 
-This project was completed by a team of 10
+This project was completed by a team of 10 \n
 [Full Team and Organization](https://github.com/CS3733-C22-Team-D)
 
 ## Personal Accomplishments
