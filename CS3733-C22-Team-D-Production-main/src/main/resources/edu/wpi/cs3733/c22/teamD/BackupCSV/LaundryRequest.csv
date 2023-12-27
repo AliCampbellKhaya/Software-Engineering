@@ -1,0 +1,7 @@
+serviceID,serviceRequestType,creator_employee,assigned_employee,description,serviceStatus,urgency,initiatedTime,completedTime,location
+123457789,LaundryRequest,153746354,253746354,This is a description,INCOMPLETE,MED,Initiated time,completedTime,FHALL00901
+123458789,LaundryRequest,153746354,253746354,This is a description,COMPLETE,LOW,Initiated time,completedTime,FHALL00901
+123459789,LaundryRequest,153746354,253746354,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL00901
+123456889,LaundryRequest,153746354,253746354,This is a description,INCOMPLETE,HIGH,Initiated time,completedTime,FHALL00901
+123456989,LaundryRequest,153746354,253746354,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL00901
+123456799,LaundryRequest,153746354,253746354,This is a description,COMPLETE,LOW,Initiated time,completedTime,FHALL00901

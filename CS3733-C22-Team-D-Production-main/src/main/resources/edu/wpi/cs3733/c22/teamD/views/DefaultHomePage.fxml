@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<HBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.cs3733.c22.teamD.controllers.HomePageController">
+   <children>
+      <GridPane alignment="TOP_CENTER" prefWidth="1624.0" styleClass="gridpane" stylesheets="@../style/Basic.css">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="main-hbox">
+               <children>
+                  <VBox styleClass="left-vbox">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="791.0" prefWidth="1294.0" spacing="64.0" styleClass="h">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="219.0" prefWidth="525.0" spacing="30.0">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Home" wrappingWidth="379.4717025756836">
+                                       <font>
+                                          <Font name="Leelawadee UI Bold" size="40.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXButton fx:id="employeeDatabaseButoon" alignment="CENTER" buttonType="RAISED" onAction="#navToEmployeeDatabase" opacity="0.9" prefHeight="57.0" prefWidth="591.0" style="-fx-background-color: #0157B5;" text="Employee Information" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font name="Segoe UI Semilight" size="26.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="locationDatabaseButton" alignment="CENTER" buttonType="RAISED" onAction="#navToLocationDatabase" opacity="0.9" prefHeight="56.0" prefWidth="553.0" style="-fx-background-color: #0157B5;" text="Location Information" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font name="Segoe UI Semilight" size="26.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="equipmentDatabaseButton" alignment="CENTER" buttonType="RAISED" onAction="#navToEquipmentDatabase" opacity="0.9" prefHeight="57.0" prefWidth="830.0" style="-fx-background-color: #0157B5;" text="Medical Equipment Information" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font name="Segoe UI Semilight" size="26.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="511.0" prefWidth="426.0" spacing="30.0">
+                                 <children>
+                                    <JFXButton fx:id="MEDbButton" alignment="CENTER" buttonType="RAISED" onAction="#navToMedicalEquipmentDeliveryRequest" opacity="0.9" prefHeight="254.0" prefWidth="426.0" style="-fx-background-color: #808080;" text="Medical Equipment Delivery" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font name="Leelawadee UI" size="30.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="mapEditor" alignment="CENTER" buttonType="RAISED" onAction="#navToMapEditor" opacity="0.9" prefHeight="100.0" prefWidth="432.0" style="-fx-background-color: white;" text="Map Editor" textAlignment="CENTER" wrapText="true">
+                                       <font>
+                                          <Font name="Segoe UI Semilight" size="26.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="sideViewButton" alignment="CENTER" buttonType="RAISED" opacity="0.9" prefHeight="100.0" prefWidth="447.0" style="-fx-background-color: white;" text="Side View" wrapText="true">
+                                       <font>
+                                          <Font name="Segoe UI Semilight" size="26.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <JFXButton fx:id="addServiceButton" alignment="CENTER" buttonType="RAISED" onAction="#navToAddServicePage" opacity="0.9" prefHeight="272.0" prefWidth="1294.0" style="-fx-background-color: FFD27C;" text="+ Service Request" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Semilight" size="26.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="right-vbox" />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</HBox>

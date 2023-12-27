@@ -1,0 +1,74 @@
+.service-button{
+    -fx-font-size: 18pt;
+    -fx-background-color: #4059a9;
+    -fx-text-fill: white;
+    -fx-border-color: #4059a9;
+    -fx-font-family: "Segoe UI Semilight Bold";
+    -fx-opacity: 1;
+    -fx-pref-height: 60px;
+    -fx-pref-width: 500px;
+    -fx-wrap-text: true;
+    -fx-background-insets: 0pt;
+    -jfx-button-type: FLAT;
+    -fx-padding: 0;
+    -fx-alignment: BASELINE_LEFT;
+}
+
+.icon{
+    -fx-translate-x: 15px;
+
+}
+
+.service-button-vbox {
+    -fx-translate-x: 33px;
+    -fx-translate-y: 16px;
+    -fx-spacing: 15;
+}
+
+.button-hbox{
+    -fx-translate-x: 25px;
+    -fx-translate-y: 200px;
+
+}
+
+
+.img-style {
+    -fx-background-radius: 4pt;
+}
+
+.jfx-text-box{
+    -fx-border-width: .5pt;
+    -fx-border-color: #4d4d4d;
+    -fx-background-color: transparent;
+}
+
+.plus-sign{
+    -fx-font-size: 40pt;
+    -fx-font-family: "Segoe UI Semilight Bold";
+    -fx-text-fill: white;
+    -fx-translate-x: 488px;
+}
+
+.button-selection{
+    -fx-pref-height: 1080px;
+    -fx-pref-width: 960px;
+}
+
+.button-pane {
+    -fx-background-color: white;
+    -fx-pref-height: 1080px;
+    -fx-pref-width: 960px;
+}
+
+.name{
+    -fx-font-size: 20pt;
+    -fx-translate-x: 546px;
+}
+
+.toggle-switch{
+    -fx-pref-width: 372px;
+    -fx-pref-height: 1px;
+    -fx-font-size: 18pt;
+    -fx-font-family: "Segoe UI Semilight Bold";
+    -fx-text-fill: black;
+}

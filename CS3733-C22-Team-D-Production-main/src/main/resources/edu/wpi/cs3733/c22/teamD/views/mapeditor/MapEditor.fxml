@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXNodesList?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import net.kurobako.gesturefx.GesturePane?>
+
+<StackPane alignment="BOTTOM_RIGHT" prefHeight="801.0" prefWidth="1231.0" stylesheets="@../../style/ServicePageStructure.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.cs3733.c22.teamD.controllers.mapeditor.MapEditorController">
+   <children>
+      <GesturePane fx:id="pane" clipEnabled="false" layoutX="1000.0" prefHeight="801.0" prefWidth="1029.0" scrollZoomFactor="0.5" style="-fx-background-color: white;" />
+      <Group StackPane.alignment="BOTTOM_RIGHT">
+         <children>
+            <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="43.0" prefWidth="290.0" spacing="10.0">
+               <children>
+                  <JFXNodesList fx:id="nodesList" prefHeight="49.0" prefWidth="171.0" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="mainIcon" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #013A75; -fx-background-radius: 40;" text="Home" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/pane.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="levelButton" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #013A75; -fx-background-radius: 40; -fx-border-radius: 4;" text="L1" textFill="WHITE" />
+                        <JFXButton fx:id="levelButton1" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #013A75; -fx-background-radius: 40;" text="L2" textFill="WHITE" />
+                        <JFXButton fx:id="levelButton2" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #013A75; -fx-background-radius: 40;" text="1" textFill="WHITE" />
+                        <JFXButton fx:id="levelButton3" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #013A75; -fx-background-radius: 40;" text="2" textFill="WHITE" />
+                        <JFXButton fx:id="levelButton4" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #013A75; -fx-background-radius: 40;" text="3" textFill="WHITE" />
+                     </children>
+                  </JFXNodesList>
+                  <JFXNodesList fx:id="visibilityNodeList" prefHeight="49.0" prefWidth="171.0" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="mainIcon2" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #013A75; -fx-background-radius: 40;" text="Home" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/eye-on.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="toggleLocation" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#toggleLocation" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #013A75; -fx-background-radius: 40;" text="Location" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/map-pin.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="toggleEquipment" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#toggleEquipment" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #013A75; -fx-background-radius: 40;" text="Equipment" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/package.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="toggleRequest" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#toggleRequest" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #013A75; -fx-background-radius: 40;" text="Request" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/file.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </JFXNodesList>
+                  <JFXNodesList fx:id="settingNodeList" prefHeight="49.0" prefWidth="171.0" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="mainIcon1" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #013A75; -fx-background-radius: 40;" text="Home" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/cog.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="downloadButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#downloadCSV" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #013A75; -fx-background-radius: 40;" text="Download" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/download.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="uploadButon" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#uploadCSV" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #013A75; -fx-background-radius: 40;" text="Upload" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/upload.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </JFXNodesList>
+               </children>
+            </HBox>
+         </children>
+         <StackPane.margin>
+            <Insets bottom="16.0" right="16.0" />
+         </StackPane.margin>
+      </Group>
+      <Group StackPane.alignment="TOP_RIGHT">
+         <children>
+            <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="43.0" prefWidth="46.0" spacing="10.0">
+               <children>
+                  <JFXButton fx:id="visibility" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" onAction="#showSideMap" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #013A75; -fx-background-radius: 40;" text="Visible" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="visibilityIcon" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+         <StackPane.margin>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </StackPane.margin>
+      </Group>
+      <Group fx:id="sideViewPopUp" StackPane.alignment="TOP_RIGHT">
+         <StackPane.margin>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="70.0" />
+         </StackPane.margin>
+         <children>
+            <GridPane prefHeight="201.0" prefWidth="200.0" style="-fx-background-color: #f1f1f1; -fx-border-color: black;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="288.238037109375" minHeight="10.0" prefHeight="170.5267791748047" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="148.02394104003906" minHeight="10.0" prefHeight="24.973220825195312" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+               <children>
+                  <ImageView fx:id="sideMapContainer" fitHeight="172.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true" GridPane.hgrow="ALWAYS" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@../../images/map/SV.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Side View" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <VBox fx:id="hiddenFloorVBox" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle fx:id="floorThree" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="194.0">
+                           <VBox.margin>
+                              <Insets bottom="21.0" top="50.0" />
+                           </VBox.margin>
+                        </Rectangle>
+                        <Rectangle fx:id="floorOne" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="194.0" />
+                        <Rectangle fx:id="lowerLevelOne" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="194.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Rectangle>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </Group>
+   </children>
+</StackPane>

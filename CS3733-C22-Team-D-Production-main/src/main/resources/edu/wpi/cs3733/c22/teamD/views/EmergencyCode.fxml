@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="main-frame-anchor" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.cs3733.c22.teamD.controllers.EmergencyCodeController">
+    <children>
+        <Pane prefHeight="720.0" prefWidth="1280.0">
+            <children>
+                <VBox prefHeight="720.0" prefWidth="1280.0" spacing="25.0" styleClass="vbox-main" stylesheets="@../style/EmergencyCodeStyle.css">
+                    <children>
+                        <Pane prefHeight="107.0" prefWidth="1165.0" styleClass="emergency-cards-main" VBox.vgrow="NEVER">
+                            <children>
+                                <Text layoutX="24.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emergency Codes" translateY="-23.0" wrappingWidth="344.53662109375">
+                                    <font>
+                                        <Font name="Leelawadee UI" size="42.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </Pane>
+                        <Pane prefHeight="326.0" prefWidth="1230.0">
+                            <children>
+                                <HBox layoutY="4.0" prefHeight="317.0" prefWidth="1251.0" styleClass="top-hbox">
+                                    <children>
+                                        <Pane prefHeight="232.0" prefWidth="232.0" styleClass="bg-pane">
+                                            <children>
+                                                <ImageView fx:id="redInfo" fitHeight="44.0" fitWidth="43.0" layoutX="183.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icons/info.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <JFXButton fx:id="redButton" buttonType="RAISED" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" styleClass="-red-button" text="RED BUTTON">
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                                <JFXButton fx:id="testButton" layoutX="183.0" layoutY="5.0" opacity="0.0" prefHeight="36.0" prefWidth="52.0" style="-fx-background-color: blue;">
+                                                    <tooltip>
+                                                        <Tooltip text="Fire" />
+                                                    </tooltip>
+                                                </JFXButton>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="317.0" prefWidth="308.0" styleClass="bg-pane">
+                                            <children>
+                                                <ImageView fx:id="greenInfo" fitHeight="44.0" fitWidth="43.0" layoutX="183.0" layoutY="5.0" onMouseClicked="#clickImageAction" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icons/info.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <JFXButton fx:id="greenButton" buttonType="RAISED" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" styleClass="-green-button" text="GREEN BUTTON">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor></JFXButton>
+                                                <JFXButton fx:id="testButton1" layoutX="179.0" layoutY="1.0" opacity="0.0" prefHeight="36.0" prefWidth="52.0" style="-fx-background-color: blue;">
+                                                    <tooltip>
+                                                        <Tooltip text="M.D. or Specialty Needed Urgently" />
+                                                    </tooltip>
+                                                </JFXButton>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="317.0" prefWidth="308.0" styleClass="bg-pane">
+                                            <children>
+                                                <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="184.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icons/info.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <JFXButton fx:id="pinkButton" buttonType="RAISED" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" styleClass="-pink-button" text="PINK BUTTON">
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor></JFXButton>
+                                                <JFXButton fx:id="testButton2" layoutX="180.0" layoutY="1.0" opacity="0.0" prefHeight="36.0" prefWidth="52.0" style="-fx-background-color: blue;">
+                                                    <tooltip>
+                                                        <Tooltip text="Infant Abduction" />
+                                                    </tooltip>
+                                                </JFXButton>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="307.0" prefWidth="291.0" styleClass="bg-pane">
+                                            <children>
+                                                <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="184.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icons/info.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <JFXButton fx:id="blueButton" buttonType="RAISED" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" styleClass="-blue-button" text="BLUE BUTTON">
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor></JFXButton>
+                                                <JFXButton fx:id="testButton3" layoutX="180.0" layoutY="1.0" opacity="0.0" prefHeight="36.0" prefWidth="52.0" style="-fx-background-color: blue;">
+                                                    <tooltip>
+                                                        <Tooltip text="Immediate Medical Assistance Needed" />
+                                                    </tooltip>
+                                                </JFXButton>
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </HBox>
+                        <Label fx:id="selectedCode" layoutX="372.0" layoutY="-6.0" styleClass="display-code" text="Selected Code:" />
+                        <JFXComboBox fx:id="emergencyLocation" layoutX="630.0" layoutY="2.0" promptText="Location" styleClass="emergency-location" />
+                        <JFXButton fx:id="emergencySubmit" layoutX="886.0" layoutY="3.0" styleClass="code-submit" text="Submit" />
+                            </children>
+                        </Pane>
+                        <Pane layoutX="35.0" layoutY="168.0" prefHeight="326.0" prefWidth="1230.0">
+                            <children>
+                                <HBox prefHeight="317.0" prefWidth="1251.0" styleClass="bottom-hbox">
+                                    <children>
+                                        <Pane prefHeight="317.0" prefWidth="308.0" styleClass="bg-pane">
+                                            <children>
+                                                <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="184.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icons/info.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <JFXButton fx:id="greyButton" buttonType="RAISED" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" styleClass="-grey-button">
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor></JFXButton>
+                                                <JFXButton fx:id="testButton4" layoutX="180.0" layoutY="1.0" opacity="0.0" prefHeight="36.0" prefWidth="52.0" style="-fx-background-color: blue;">
+                                                    <tooltip>
+                                                        <Tooltip text="Security Personnel Needed Urgently" />
+                                                    </tooltip>
+                                                </JFXButton>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="317.0" prefWidth="308.0" styleClass="bg-pane">
+                                            <children>
+                                                <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="182.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icons/info.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <JFXButton fx:id="whiteButton" buttonType="RAISED" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" styleClass="-white-button">
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor></JFXButton>
+                                                <JFXButton fx:id="testButton5" layoutX="178.0" layoutY="1.0" opacity="0.0" prefHeight="36.0" prefWidth="52.0" style="-fx-background-color: blue;">
+                                                    <tooltip>
+                                                        <Tooltip text="Bomb Threat" />
+                                                    </tooltip>
+                                                </JFXButton>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="317.0" prefWidth="308.0" styleClass="bg-pane">
+                                            <children>
+                                                <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="183.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icons/info.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <JFXButton fx:id="amberButton" buttonType="RAISED" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" styleClass="-amber-button">
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor></JFXButton>
+                                                <JFXButton fx:id="testButton6" layoutX="179.0" layoutY="1.0" opacity="0.0" prefHeight="36.0" prefWidth="52.0" style="-fx-background-color: blue;">
+                                                    <tooltip>
+                                                        <Tooltip text="Disaster Plan in Effect" />
+                                                    </tooltip>
+                                                </JFXButton>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="307.0" prefWidth="291.0" styleClass="bg-pane">
+                                            <children>
+                                                <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="186.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icons/info.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <JFXButton fx:id="turquoiseButton" buttonType="RAISED" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" styleClass="-teal-button">
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor></JFXButton>
+                                                <JFXButton fx:id="testButton7" layoutX="182.0" layoutY="1.0" opacity="0.0" prefHeight="36.0" prefWidth="52.0" style="-fx-background-color: blue;">
+                                                    <tooltip>
+                                                        <Tooltip text="Patient on the loose" />
+                                                    </tooltip>
+                                                </JFXButton>
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </HBox>
+                            </children>
+                        </Pane>
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+    </children>
+    <stylesheets>
+        <URL value="@../style/ServicePageStructure.css" />
+        <URL value="@../style/EmergencyCodeStyle.css" />
+        <URL value="@../style/ServicePageNewUI.css" />
+    </stylesheets>
+</AnchorPane>

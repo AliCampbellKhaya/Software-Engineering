@@ -1,0 +1,63 @@
+.vbox-main { /* vbox around title pane and entry pane */
+    -fx-background-color:  #EBECF0;
+    -fx-padding: 25px;
+}
+
+.vbox-side { /* list of service requests */
+    -fx-background-color:  none;
+    -fx-padding: 25px;
+    -fx-spacing: 30px;
+}
+
+.cards-main {
+    -fx-background-color:  white;
+    -fx-border-color:  #EBECF0;
+    -fx-effect: dropshadow( two-pass-box, #BEBEBE , 2, 3  , 2, 2 );
+}
+
+.vbox-content {
+    -fx-padding: 25;
+}
+
+.main-request-box {
+    -fx-pref-width: 856;
+    -fx-pref-height: 378;
+    -fx-padding: 16px;
+    -fx-spacing: 16px;
+}
+.hbox-fields {
+    -fx-spacing: 48px;
+    -fx-padding: 24px;
+}
+.cards-side {
+    -fx-background-color:  white;
+    -fx-opacity: 85%;
+    -fx-background-radius: 2px;
+}
+
+.yellow-title-card {
+    -fx-fill:  #FBB03B;
+    -fx-opacity: 75%;
+    -fx-border-color:  #EBECF0;
+}
+
+.label-style {
+    -fx-font-size: 24;
+    -fx-text-fill: #012D5A;
+}
+
+.service-box {
+    -fx-background-color: white;
+    -fx-border-color:  #EBECF0;
+    -fx-effect: dropshadow( two-pass-box, #BEBEBE , 4, 0 , 1, 1 );
+}
+
+.user-field {
+    -fx-background-color: #EBECF0;
+}
+
+.extra-box {
+
+    -fx-background-color: #EBECF0;
+
+}

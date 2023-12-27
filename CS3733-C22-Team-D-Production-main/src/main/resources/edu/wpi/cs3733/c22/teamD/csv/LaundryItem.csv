@@ -1,0 +1,4 @@
+laundryID, laundryType, inStock
+1, Bed Sheet, true
+2, Drapes, true
+3, Pillow Case, false

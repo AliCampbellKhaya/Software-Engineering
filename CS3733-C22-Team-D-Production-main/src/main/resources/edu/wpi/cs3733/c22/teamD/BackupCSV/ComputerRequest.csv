@@ -1,0 +1,7 @@
+serviceID,serviceRequestType,creator_employee,assigned_employee,description,serviceStatus,urgency,initiatedTime,completedTime,location,itID
+123456789,ComputerRequest,236486673,146486673,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL00901,12345
+223456789,ComputerRequest,236486673,146486673,This is a description,COMPLETE,HIGH,Initiated time,completedTime,FHALL00901,22345
+323456789,ComputerRequest,236486673,146486673,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL00901,32345
+423456789,ComputerRequest,236486673,146486673,This is a description,INCOMPLETE,MED,Initiated time,completedTime,FHALL00901,42345
+523456789,ComputerRequest,253746354,646486673,This is a description,COMPLETE,LOW,Initiated time,completedTime,FHALL00901,52345
+623456789,ComputerRequest,253746354,646486673,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL00901,62345

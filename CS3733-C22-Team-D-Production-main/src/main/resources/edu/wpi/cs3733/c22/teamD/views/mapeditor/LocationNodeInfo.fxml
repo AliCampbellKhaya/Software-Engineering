@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<AnchorPane prefHeight="121.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.cs3733.c22.teamD.controllers.mapeditor.LocationNodeInfoController">
+   <children>
+      <GridPane layoutX="-3.0" prefHeight="136.0" prefWidth="253.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="46.68112564086914" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.81887435913086" minWidth="10.0" prefWidth="169.81887435913086" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label style="-fx-text-fill: #013A75;" text="ID:" />
+            <Label style="-fx-text-fill: #013A75;" text="xCoord:" GridPane.rowIndex="1" />
+            <Label style="-fx-text-fill: #013A75;" text="yCoord:" GridPane.rowIndex="2" />
+            <Label style="-fx-text-fill: #013A75;" text="Name:" GridPane.rowIndex="3" />
+            <Label style="-fx-text-fill: #013A75;" text="Abbrev:" GridPane.rowIndex="4" />
+            <Label fx:id="id" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="8.0" />
+               </GridPane.margin>
+            </Label>
+            <Label GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="xCoord">
+               <GridPane.margin>
+                  <Insets left="8.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="yCoord" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="8.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="longName" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="8.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="shortName" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <padding>
+                  <Insets left="8.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </GridPane>
+   </children>
+</AnchorPane>

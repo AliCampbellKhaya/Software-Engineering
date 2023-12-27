@@ -1,0 +1,8 @@
+.gradle
+.build
+.idea
+Ddb
+build
+derby.log
+simplelogger.properties
+.DS_Store

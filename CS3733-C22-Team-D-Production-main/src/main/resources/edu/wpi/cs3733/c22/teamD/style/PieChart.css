@@ -1,0 +1,9 @@
+.data0.chart-pie { -fx-pie-color: #013A75; }
+.data1.chart-pie { -fx-pie-color: #FFCB65; }
+
+.chart {
+    -fx-pref-width: 250;
+    -fx-pref-height: 250;
+    -fx-max-width: 300;
+    -fx-max-height: 300;
+}

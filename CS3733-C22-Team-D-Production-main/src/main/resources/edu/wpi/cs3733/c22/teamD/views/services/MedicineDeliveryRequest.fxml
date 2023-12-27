@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1920.0" styleClass="gridpane" stylesheets="@../../style/Basic.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.cs3733.c22.teamD.controllers.services.MedicineDeliveryController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <HBox layoutX="56.0" prefHeight="1080.0" prefWidth="1864.0" styleClass="main-hbox">
+         <children>
+            <VBox prefHeight="1080.0" prefWidth="1398.0" styleClass="left-vbox">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="641.0" styleClass="vbox-title">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Medicine Delivery Request" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-description" text="This is the description ..." />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="869.0" styleClass="body-vbox" VBox.vgrow="ALWAYS">
+                     <children>
+                        <AnchorPane styleClass="yellow-card">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="yellow-pane-text" text="Please fill out all required fields:" />
+                           </children>
+                        </AnchorPane>
+                        <HBox alignment="CENTER" prefHeight="340.0" prefWidth="868.0" spacing="48.0" styleClass="hbox-fields" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" maxHeight="388.0" prefHeight="329.0" prefWidth="375.0" spacing="10.0" styleClass="vbox-content" HBox.hgrow="NEVER">
+                                 <children>
+                                    <Group>
+                                       <children>
+                                          <Label layoutY="23.0" styleClass="label-style" text="Urgency:" />
+                                          <JFXComboBox fx:id="urgencyMed" layoutY="53.0" maxHeight="40.0" onAction="#enableSubmitButton" onMouseExited="#enableSubmitButton" onMousePressed="#enableSubmitButton" prefHeight="40.0" prefWidth="329.0" styleClass="user-field" />
+                                       </children>
+                                    </Group>
+                                    <Group>
+                                       <children>
+                                          <Label layoutY="27.0" prefHeight="43.0" prefWidth="257.0" styleClass="label-style" text="Assign to Employee:" />
+                                          <JFXComboBox fx:id="assigneeField" layoutY="67.0" onAction="#enableSubmitButton" onMouseExited="#enableSubmitButton" onMousePressed="#enableSubmitButton" prefHeight="40.0" prefWidth="329.0" styleClass="user-field" />
+                                       </children>
+                                    </Group>
+                                    <Group>
+                                       <children>
+                                          <Label layoutY="30.0" prefHeight="43.0" prefWidth="160.0" styleClass="label-style" text="Destination:" />
+                                          <JFXComboBox fx:id="locationField" layoutY="67.0" maxHeight="40.0" onAction="#enableSubmitButton" onMouseExited="#enableSubmitButton" onMousePressed="#enableSubmitButton" prefHeight="40.0" prefWidth="329.0" styleClass="user-field" />
+                                       </children>
+                                    </Group>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" maxHeight="388.0" prefHeight="268.0" prefWidth="446.0" spacing="10.0" styleClass="vbox-content">
+                                 <children>
+                                    <Group>
+                                       <children>
+                                          <Label layoutY="25.0" styleClass="label-style" text="Medicine Type:" />
+                                          <JFXComboBox fx:id="medicineTypeBox" layoutY="57.0" maxHeight="40.0" onAction="#enableSubmitButton" onMouseExited="#enableSubmitButton" onMousePressed="#enableSubmitButton" prefHeight="35.0" prefWidth="331.0" styleClass="user-field" />
+                                       </children>
+                                    </Group>
+                                    <JFXTextArea fx:id="extraField" prefHeight="125.0" prefWidth="285.0" styleClass="extra-box" VBox.vgrow="ALWAYS" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="24.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" styleClass="button-hbox">
+                           <children>
+                              <JFXButton fx:id="clear" onAction="#onClear" styleClass="clear-button" text="Clear" />
+                              <JFXButton fx:id="submit" onAction="#onSubmit" prefHeight="57.0" prefWidth="129.0" styleClass="submit-button" text="Submit" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="1080.0" prefWidth="466.0" styleClass="right-vbox" />
+         </children>
+      </HBox>
+   </children>
+</GridPane>

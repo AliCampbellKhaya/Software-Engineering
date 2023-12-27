@@ -1,0 +1,7 @@
+serviceID,serviceRequestType,creator_employee,assigned_employee,description,serviceStatus,urgency,initiatedTime,completedTime,location
+12345718,SecurityService,153746354,253746354,This is a description,INCOMPLETE,MED,Initiated time,completedTime,FHALL00901
+12345828,SecurityService,153746354,253746354,This is a description,COMPLETE,LOW,Initiated time,completedTime,FHALL00901
+12345938,SecurityService,153746354,253746354,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL00901
+12345648,SecurityService,153746354,253746354,This is a description,INCOMPLETE,HIGH,Initiated time,completedTime,FHALL00901
+12345658,SecurityService,153746354,253746354,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL00901
+12345669,SecurityService,153746354,253746354,This is a description,COMPLETE,LOW,Initiated time,completedTime,FHALL00901

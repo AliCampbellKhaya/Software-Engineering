@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="227.0" scaleShape="false" style="-fx-background-color: #012D5A;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="109.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+         <VBox.margin>
+            <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+         </VBox.margin>
+      </ImageView>
+      <Pane prefHeight="4.0" prefWidth="227.0" style="-fx-background-color: #013A75 #013A75;" />
+      <VBox alignment="TOP_CENTER" prefHeight="405.0" prefWidth="227.0" spacing="12.0">
+         <children>
+            <JFXButton fx:id="searchButton" alignment="BASELINE_LEFT" ellipsisString="" graphicTextGap="10.0" prefHeight="45.0" prefWidth="281.0" style="-fx-border-radius: 8;" text="Search" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="SF Pro Text Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="16.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="bHome" alignment="BASELINE_LEFT" ellipsisString="" graphicTextGap="10.0" prefHeight="45.0" prefWidth="227.0" style="-fx-border-radius: 8;" text="Home" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="SF Pro Text Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="16.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="bEditor" alignment="BASELINE_LEFT" ellipsisString="" graphicTextGap="10.0" prefHeight="45.0" prefWidth="227.0" style="-fx-border-radius: 8;" text="Map Editor" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="SF Pro Text Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/map.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="16.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="bEmployee" alignment="BASELINE_LEFT" graphicTextGap="10.0" minWidth="40.0" prefHeight="46.0" prefWidth="227.0" text="Employee&#10;Database" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="SF Pro Text Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../images/multi-user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="16.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="bLocation" alignment="BASELINE_LEFT" graphicTextGap="10.0" minWidth="40.0" prefHeight="46.0" prefWidth="227.0" text="Location &#10;Database&#10;" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="SF Pro Text Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../images/map-pin.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="16.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="bMedical" alignment="BASELINE_LEFT" graphicTextGap="10.0" prefHeight="45.0" prefWidth="227.0" text="Medical&#10;Equipment" textFill="WHITE" textOverrun="CLIP" wrapText="true" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="SF Pro Text Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../images/shield.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="16.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="bRequest" alignment="BASELINE_LEFT" graphicTextGap="10.0" prefHeight="50.0" prefWidth="227.0" text="Service Request" textFill="WHITE">
+               <font>
+                  <Font name="SF Pro Text Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/circle-plus.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="16.0" />
+               </padding>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets top="12.0" />
+         </padding>
+      </VBox>
+      <JFXButton fx:id="exitButton" alignment="BASELINE_LEFT" graphicTextGap="10.0" prefHeight="50.0" prefWidth="227.0" text="Exit Application" textFill="WHITE" VBox.vgrow="NEVER">
+         <font>
+            <Font name="SF Pro Text Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/X-close.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets left="16.0" />
+         </padding>
+      </JFXButton>
+   </children>
+</VBox>

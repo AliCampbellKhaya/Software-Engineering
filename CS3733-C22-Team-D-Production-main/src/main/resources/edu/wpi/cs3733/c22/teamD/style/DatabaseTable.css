@@ -1,0 +1,54 @@
+.grid-pane {
+    -fx-pref-width: 1214;
+    -fx-pref-height: 720;
+    -fx-background-color: #E5E5E5;
+}
+
+.left-vbox {
+    -fx-padding: 24;
+    -fx-spacing: 24;
+}
+
+
+.right-vbox {
+    -fx-pref-width: 700px;
+    -fx-padding: 24;
+    -fx-spacing: 24;
+    -fx-background-color: #FFFFFF;
+}
+
+.right-vbox-less {
+    -fx-pref-width: 700px;
+    -fx-padding: 60 24 24 24;
+    -fx-background-color: #FFFFFF;
+}
+
+.title-pane {
+    -fx-background-color: #FFFFFF;
+}
+
+.title-pane .button-box{
+    -fx-padding: 0 24 0 0;
+    -fx-spacing: 24;
+}
+
+.title-pane .modify-button {
+    -fx-pref-height: 48;
+    -fx-pref-width: 48;
+    -fx-background-color: #013A75;
+}
+
+.content {
+    -fx-vbar-policy: "ALWAYS";
+    -fx-background-color: #FFFFFF;
+}
+
+.content .header-bar {
+    -fx-vbar-policy: "ALWAYS";
+    -fx-pref-height: 48;
+    -fx-background-color: #013A75;
+}
+
+.content .table-wrapper {
+    -fx-padding: 24;
+}

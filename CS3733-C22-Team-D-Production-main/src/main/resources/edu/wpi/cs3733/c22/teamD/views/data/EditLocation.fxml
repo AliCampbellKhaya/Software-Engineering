@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="222.0" prefWidth="317.0" stylesheets="@../../style/MapEditor.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.cs3733.c22.teamD.controllers.data.popups.EditLocationPopupController">
+   <children>
+      <HBox prefHeight="183.0" prefWidth="317.0" spacing="16.0">
+         <children>
+            <VBox prefHeight="352.0" prefWidth="158.0" spacing="16.0">
+               <children>
+                  <TextField fx:id="nodeID" promptText="ID" styleClass="jfx-text-box">
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField promptText="X-coordinate" styleClass="jfx-text-box" fx:id="xCoord" />
+                  <TextField fx:id="yCoord" promptText="Y-Coordinate" styleClass="jfx-text-box" />
+                  <TextField fx:id="floor" promptText="Floor" styleClass="jfx-text-box">
+                     <VBox.margin>
+                        <Insets bottom="16.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+               <HBox.margin>
+                  <Insets left="16.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="352.0" prefWidth="160.0" spacing="16.0">
+               <children>
+                  <TextField fx:id="building" promptText="Buliding type" styleClass="jfx-text-box">
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="nodeType" promptText="Location type" styleClass="jfx-text-box" />
+                  <TextField fx:id="longName" promptText="Full name" styleClass="jfx-text-box" />
+                  <TextField fx:id="shortName" promptText="Shorthand name" styleClass="jfx-text-box">
+                     <VBox.margin>
+                        <Insets bottom="16.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+               <HBox.margin>
+                  <Insets right="16.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <JFXButton fx:id="update" layoutX="15.0" layoutY="181.0" prefHeight="30.0" prefWidth="286.0" style="-fx-background-color: #013A75;" text="Update" textFill="WHITE" />
+   </children>
+</AnchorPane>

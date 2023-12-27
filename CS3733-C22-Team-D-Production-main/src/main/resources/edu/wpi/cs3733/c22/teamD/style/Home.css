@@ -1,0 +1,83 @@
+.gridpane {
+    -fx-background-color: #E5E5E5;
+    -fx-padding-left: 64;
+    -fx-width: 1232
+}
+
+.left-vbox {
+    -fx-padding: 24;
+    -fx-pref-width: 1232;
+    -fx-pref-height: 720;
+    -fx-background-color: #E5E5E5;
+}
+
+.right-vbox {
+    -fx-spacing: 48;
+    -fx-pref-width: 466;
+    -fx-pref-height: 720;
+    -fx-background-color: #013D7B;
+}
+
+.jfx-button {
+    -fx-font-size: 12;
+    -fx-background-color: #013A75;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI Semilight";
+}
+
+.card {
+    -fx-pref-width: 132;
+    -fx-pref-height: 132;
+    -fx-background-color: #013D7B;
+    -fx-font-size: 12;
+    -fx-border-radius: 8
+}
+
+.map-outline {
+    -fx-border-color: #013D7B;
+    -fx-border-width: 4;
+}
+
+.name-card {
+    -fx-background-radius: 0 10 0 0;
+    -fx-background-color: #013D7B;
+}
+
+/*.table-view{*/
+/*    -fx-background-color: transparent;*/
+/*}*/
+
+/*.table-view .column-header {*/
+/*    -fx-font-size: 12;*/
+/*    -fx-background-color: #E5E5E5;*/
+/*}*/
+
+/*.table-view .column-header-background .label{*/
+/*    -fx-background-color: #E5E5E5;*/
+/*    -fx-text-fill: #013D7B;*/
+/*    -fx-border-color: #013D7B;*/
+/*    -fx-border-width: 0 0 2 0;*/
+/*}*/
+
+/*.table-view .scroll-bar * {*/
+/*    -fx-min-width: 0;*/
+/*    -fx-pref-width: 0;*/
+/*    -fx-max-width: 0;*/
+
+/*    -fx-min-height: 0;*/
+/*    -fx-pref-height: 0;*/
+/*    -fx-max-height: 0;*/
+/*}*/
+
+/*.table-view .table-cell{*/
+/*    -fx-padding: 8;*/
+/*}*/
+
+/*.table-row-cell:odd{*/
+/*    -fx-border-color: transparent;*/
+/*    -fx-background-color: transparent;*/
+/*}*/
+/*.table-row-cell:even{*/
+/*    -fx-border-color: transparent;*/
+/*    -fx-background-color: transparent;*/
+/*}*/

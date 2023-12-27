@@ -1,0 +1,171 @@
+.image-view-hospital {
+    -fx-pref-width: 1390;
+    -fx-pref-height: 1080;
+    -fx-alignment: center;
+}
+
+.splash-cover {
+    -fx-fit-to-width: 1920;
+    -fx-fit-to-height: 1080;
+    -fx-alignment: center;
+    -fx-background-color: #013A75;
+
+}
+
+.login-vbox {
+    -fx-max-width: 450;
+    -fx-padding: 32;
+    -fx-max-height: 650;
+    -fx-fill-width: true;
+    -fx-background-color: white;
+    -fx-alignment: bottom_center;
+    -fx-spacing:32;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color:  #EBECF0;
+    -fx-effect: dropshadow( gaussian, white , 1, 2  , 1, 1 );
+}
+
+.password-label {
+    -fx-max-height: 64;
+}
+
+.login-title {
+    -fx-font-family: "Leelawadee UI";
+    -fx-font-size: 64;
+    -fx-text-fill: black;
+}
+
+.text-field, .password-field {
+    -fx-border-width: 0 0 2 0;
+    -fx-pref-height: 64;
+    -fx-pref-width: 256;
+    -fx-border-color: #013D7B;
+    -fx-background-color: transparent;
+
+    -fx-font-family: "Leelawadee UI";
+    -fx-font-size: 24;
+    -fx-text-fill: black;
+}
+
+.login-button {
+    -fx-font-size: 20pt;
+    -fx-background-color: #4059a9;
+    -fx-text-fill: white;
+    -fx-pref-height: 64;
+    -fx-pref-width: 256;
+    -fx-start-margin: 5;
+    -fx-font-family: "Segoe UI Semilight";
+}
+
+#logo {
+
+}
+
+.gridpane {
+    -fx-padding: 0 0 0 0;
+    -fx-pref-width: 1920;
+    -fx-pref-height: 1080;
+    -fx-background-color: #013D7B;
+}
+
+.main-hbox {
+    -fx-pref-width: 1856;
+    -fx-pref-height: 1080;
+}
+
+.left-vbox {
+    -fx-spacing: 48;
+    -fx-padding: 48;
+    -fx-pref-width: 1390;
+    -fx-pref-height: 1080;
+    -fx-background-color: #E5e5e5;
+}
+
+.right-vbox {
+    -fx-spacing: 48;
+    -fx-pref-width: 458;
+    -fx-pref-height: 1080;
+    -fx-background-color: #013D7B;
+}
+
+.pane-title {
+    -fx-background-color: white;
+    -fx-pref-width: 1294;
+    -fx-pref-height: 242;
+    -fx-border-color:  #EBECF0;
+    -fx-effect: dropshadow( two-pass-box, #BEBEBE , 2, 3  , 2, 2 );
+}
+
+.vbox-title {
+    -fx-pref-width: 1294;
+    -fx-pref-height: 242;
+    -fx-spacing: 8;
+    -fx-padding: 48;
+
+}
+
+.pane-body {
+    -fx-background-color: white;
+    -fx-pref-width: 1294;
+    -fx-pref-height: 694;
+    -fx-border-color:  #EBECF0;
+    -fx-effect: dropshadow( two-pass-box, #BEBEBE , 2, 3  , 2, 2 );
+}
+
+
+.yellow-card {
+    -fx-background-color: #F6BD38;
+    -fx-pref-width: 1294;
+    -fx-pref-height: 64;
+}
+
+.yellow-pane-text {
+    -fx-font-family: "Leelawadee UI Semilight";
+    -fx-font-size: 32;
+    -fx-translate-x: 48;
+    -fx-translate-y: 46;
+}
+
+
+.title {
+    -fx-font-family: "Leelawadee UI";
+    -fx-font-size: 48;
+}
+.title-description {
+    -fx-font-family: "Leelawadee UI";
+    -fx-font-size: 24;
+}
+
+.body-vbox {
+    -fx-pref-width: 1294;
+    -fx-pref-height: 694;
+    -fx-padding: 64 8 8 8;
+}
+
+.submit-button {
+    -fx-font-size: 20pt;
+    -fx-background-color: #4059a9;
+    -fx-text-fill: white;
+    -fx-pref-height: 64;
+    -fx-pref-width: 256;
+    -fx-font-family: "Segoe UI Semilight";
+}
+
+.clear-button {
+    -fx-font-size: 16pt;
+    -fx-border-color: #4059a9;
+    -fx-pref-height: 64;
+    -fx-pref-width: 128;
+
+    -fx-border-width: 2px;
+    -fx-text-fill: #4059a9;
+    -fx-font-family: "Segoe UI Semilight";
+}
+
+.button-hbox {
+    -fx-pref-height: 72;
+    -fx-spacing: 64;
+    -fx-alignment: center_right;
+}
+

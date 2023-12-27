@@ -1,0 +1,4 @@
+2022-02-21 00:46:15,404 [INFO] in application-akka.actor.default-dispatcher-4 - Starting the server
+2022-02-21 01:36:28,361 [INFO] in application-akka.actor.default-dispatcher-7 - Starting the server
+2022-02-21 01:39:16,368 [INFO] in Thread-20 - Closing the server -> used memory: 60 MB  -  free system memory: 239 MB
+2022-02-21 01:39:21,004 [INFO] in application-akka.actor.default-dispatcher-7 - Starting the server

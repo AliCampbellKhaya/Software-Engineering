@@ -1,0 +1,115 @@
+. -fx-base{
+    -fx-background-color: #424242;
+}
+
+
+.top-hbox{
+    -fx-spacing: 25px;
+    -fx-padding: 0px;
+    -fx-alignment: center;
+    -fx-translate-y: 48px;
+    -fx-pref-height: 232px;
+    -fx-pref-width: 1230px;
+}
+
+.bottom-hbox{
+    -fx-spacing: 25px;
+    -fx-padding: 0px;
+    -fx-alignment: center;
+    -fx-translate-y: 0px;
+    -fx-pref-height: 232px;
+    -fx-pref-width: 1230px;
+}
+.center-pane {
+    -fx-pref-width: 1230px;
+    -fx-pref-height: 400px;
+}
+.code-submit {
+    -fx-font-size: 14pt;
+    -fx-background-color: #4059a9;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI Semilight";
+    -fx-pref-width: 232px;
+    -fx-pref-height: 30px;
+}
+
+.display-code {
+    -fx-font-size: 14pt;
+    -fx-text-fill: #013A75;
+    -fx-font-family: "Segoe UI Semilight";
+    -fx-pref-width: 232px;
+    -fx-pref-height: 45px;
+    -fx-padding: 5px;
+    -fx-background-color: white;
+}
+
+.bg-pane{
+    -fx-pref-height: 232px;
+    -fx-pref-width: 232px;
+    -fx-background-color: #C4C4C4;
+    -fx-stroke: #C4C4C4;
+}
+
+.emergency-location {
+    -fx-background-color: white;
+    -fx-pref-width: 232px;
+    -fx-pref-height: 30px;
+    -fx-font-size: 14pt;
+
+}
+
+.-red-button{
+    -fx-shape:  " M 25, 50 a 25,25 0 1,1 50,0 a 25,25 0 1,1 -50,0";
+    -fx-background-color: #FF6961;
+    -fx-text-fill: #FF6961;
+}
+
+.-grey-button{
+    -fx-shape:  " M 25, 50 a 25,25 0 1,1 50,0 a 25,25 0 1,1 -50,0";
+    -fx-background-color: #656565;
+    -fx-text-fill: #656565;
+}
+
+.-blue-button{
+    -fx-shape:  " M 25, 50 a 25,25 0 1,1 50,0 a 25,25 0 1,1 -50,0";
+    -fx-background-color: #013A75;
+    -fx-text-fill: #013A75;
+}
+
+.-green-button{
+    -fx-shape:  " M 25, 50 a 25,25 0 1,1 50,0 a 25,25 0 1,1 -50,0";
+    -fx-background-color: #88FF8D;
+    -fx-text-fill: #88FF8D;
+}
+
+.-white-button{
+    -fx-shape:  " M 25, 50 a 25,25 0 1,1 50,0 a 25,25 0 1,1 -50,0";
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #FFFFFF;
+}
+
+.-pink-button{
+    -fx-shape:  " M 25, 50 a 25,25 0 1,1 50,0 a 25,25 0 1,1 -50,0";
+    -fx-background-color: #FC98F2;
+    -fx-text-fill: #FC98F2;
+}
+
+
+.-amber-button{
+    -fx-shape:  " M 25, 50 a 25,25 0 1,1 50,0 a 25,25 0 1,1 -50,0";
+    -fx-background-color: #F6BD38;
+    -fx-text-fill: #F6BD38;
+}
+
+.-teal-button{
+    -fx-shape:  " M 25, 50 a 25,25 0 1,1 50,0 a 25,25 0 1,1 -50,0";
+    -fx-background-color: #7DFFFF;
+    -fx-text-fill: #7DFFFF;
+}
+
+.emergency-cards-main {
+    -fx-background-color:  white;
+    -fx-border-color:  #EBECF0;
+    -fx-effect: dropshadow( two-pass-box, #BEBEBE , 2, 3  , 2, 2 );
+    -fx-padding: 25px;
+}

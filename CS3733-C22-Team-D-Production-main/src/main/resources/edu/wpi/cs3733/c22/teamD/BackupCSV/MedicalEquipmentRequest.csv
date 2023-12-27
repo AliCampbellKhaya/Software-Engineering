@@ -1,0 +1,9 @@
+serviceID,serviceRequestType,creator_employee,assigned_employee,description,serviceStatus,urgency,initiatedTime,completedTime,location,requested_medicalEquipment
+1563763471,MedicalEquipmentRequest,35374635,353746354,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL00901,890
+1563763472,MedicalEquipmentRequest,35374635,353746354,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL01001,891
+1563763473,MedicalEquipmentRequest,35374635,353746354,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL01101,892
+1563763474,MedicalEquipmentRequest,35374635,353746354,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL01201,893
+1563763475,MedicalEquipmentRequest,35374635,353746354,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL01301,894
+1563763476,MedicalEquipmentRequest,35374635,353746354,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL01401,895
+1563763477,MedicalEquipmentRequest,35374635,353746354,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL01501,896
+1563763478,MedicalEquipmentRequest,35374635,353746354,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL01601,897

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="gridpane" stylesheets="@../../style/Basic.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.cs3733.c22.teamD.controllers.services.InternalTransportationController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <HBox layoutX="56.0" prefHeight="1080.0" prefWidth="1864.0" styleClass="main-hbox" GridPane.hgrow="ALWAYS">
+            <children>
+                <VBox prefHeight="1080.0" prefWidth="1398.0" styleClass="left-vbox">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                    <children>
+                          <VBox prefHeight="184.0" prefWidth="911.0" styleClass="vbox-title">
+                              <children>
+                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Internal Transportation">
+                                      <font>
+                                          <Font size="36.0" />
+                                      </font>
+                                  </Text>
+                              </children>
+                          </VBox>
+                          <VBox alignment="CENTER" prefHeight="200.0" prefWidth="830.0" styleClass="body-vbox" VBox.vgrow="ALWAYS">
+                              <children>
+                        <AnchorPane styleClass="yellow-card">
+                           <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="yellow-pane-text" text="Please fill out the required fields." />
+                           </children>
+                        </AnchorPane>
+                        <VBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                           <children>
+                                        <HBox alignment="CENTER" prefHeight="566.0" prefWidth="1278.0" styleClass="hbox-fields" VBox.vgrow="ALWAYS">
+                                            <children>
+                                                <VBox alignment="CENTER_LEFT" prefHeight="399.0" prefWidth="409.0">
+                                                    <padding>
+                                                        <Insets left="20.0" right="70.0" top="10.0" />
+                                                    </padding>
+                                                    <children>
+                                                        <Label text="Patient">
+                                                            <font>
+                                                                <Font size="24.0" />
+                                                            </font>
+                                             <padding>
+                                                <Insets top="15.0" />
+                                             </padding>
+                                                        </Label>
+                                                        <JFXComboBox fx:id="patientField" onAction="#enableSubmitButton" prefHeight="12.0" prefWidth="343.0" />
+                                                        <Label text="Room Number">
+                                                            <font>
+                                                                <Font size="24.0" />
+                                                            </font>
+                                             <padding>
+                                                <Insets top="16.0" />
+                                             </padding>
+                                                        </Label>
+                                                        <JFXComboBox fx:id="roomField" onAction="#enableSubmitButton" prefHeight="31.0" prefWidth="343.0" />
+                                                        <Label text="Pick up Time">
+                                                            <padding>
+                                                                <Insets top="16.0" />
+                                                            </padding>
+                                                            <font>
+                                                                <Font size="24.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <TextField fx:id="timeField" onAction="#enableSubmitButton" prefWidth="450.0" styleClass="jfx-text-box">
+                                                            <padding>
+                                                                <Insets right="30.0" top="10.0" />
+                                                            </padding>
+                                                        </TextField>
+                                                        <Label text="Location">
+                                                            <padding>
+                                                                <Insets top="16.0" />
+                                                            </padding>
+                                                            <font>
+                                                                <Font size="24.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <JFXComboBox fx:id="locationField" onAction="#enableSubmitButton" prefHeight="20.0" prefWidth="450.0" />
+                                                        <Label text="Date">
+                                                            <padding>
+                                                                <Insets top="16.0" />
+                                                            </padding>
+                                                            <font>
+                                                                <Font size="24.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <DatePicker fx:id="dateField" onAction="#enableSubmitButton" prefHeight="26.0" prefWidth="365.0">
+                                                            <VBox.margin>
+                                                                <Insets top="10.0" />
+                                                            </VBox.margin>
+                                                        </DatePicker>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER_LEFT" prefHeight="399.0" prefWidth="367.0" spacing="5.0">
+                                                    <padding>
+                                                        <Insets right="70.0" top="10.0" />
+                                                    </padding>
+                                                    <children>
+                                          <Group>
+                                             <children>
+                                                              <Label graphicTextGap="0.0" layoutX="10.0" prefWidth="156.0" text="Round Trip?">
+                                                                  <padding>
+                                                                      <Insets top="15.0" />
+                                                                  </padding>
+                                                                  <font>
+                                                                      <Font size="24.0" />
+                                                                  </font>
+                                                              </Label>
+                                                <HBox layoutX="10.0" layoutY="49.0" prefHeight="30.0" prefWidth="137.0" spacing="20.0">
+                                                   <children>
+                                                                    <JFXCheckBox fx:id="yesRoundTrip" onAction="#disableCheckBoxes" text="Yes">
+                                                                        <font>
+                                                                            <Font size="18.0" />
+                                                                        </font>
+                                                                    </JFXCheckBox>
+                                                                    <JFXCheckBox fx:id="noRoundTrip" onAction="#disableCheckBoxes" text="No">
+                                                                        <font>
+                                                                            <Font size="18.0" />
+                                                                        </font>
+                                                                    </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </Group>
+                                                        <Label fx:id="pickUpLabel" prefHeight="29.0" prefWidth="216.0" text="Pick up Time">
+                                                            <font>
+                                                                <Font size="24.0" />
+                                                            </font>
+                                             <VBox.margin>
+                                                <Insets top="8.0" />
+                                             </VBox.margin>
+                                                        </Label>
+                                                        <TextField fx:id="roundTripPickUp" onAction="#disableCheckBoxes" prefWidth="450.0" styleClass="jfx-text-box" />
+                                                        <Label text="Request Made By:">
+                                                            <font>
+                                                                <Font size="24.0" />
+                                                            </font>
+                                                            <VBox.margin>
+                                                                <Insets />
+                                                            </VBox.margin>
+                                                            <padding>
+                                                                <Insets top="12.0" />
+                                                            </padding>
+                                                        </Label>
+                                                        <JFXComboBox fx:id="employeeField" onAction="#enableSubmitButton" prefHeight="26.0" prefWidth="425.0" />
+                                                        <Label text="Service Status">
+                                                            <padding>
+                                                                <Insets top="12.0" />
+                                                            </padding>
+                                                            <font>
+                                                                <Font size="24.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <JFXComboBox fx:id="statusField" onAction="#enableSubmitButton" prefHeight="10.0" prefWidth="328.0" />
+                                                        <Label text="Urgency">
+                                                            <padding>
+                                                                <Insets top="16.0" />
+                                                            </padding>
+                                                            <font>
+                                                                <Font size="24.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <JFXComboBox fx:id="urgencyField" onAction="#enableSubmitButton" prefHeight="20.0" prefWidth="450.0" />
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                        </HBox>
+                                        <HBox prefHeight="100.0" prefWidth="810.0" styleClass="button-hbox">
+                                            <children>
+                                                <TextField fx:id="extraField" prefHeight="51.0" prefWidth="264.0" promptText="Enter more details here..." style="-fx-background-color: ffffff; -fx-border-color: black;">
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </TextField>
+                                                <JFXButton fx:id="clearButton" onAction="#onClear" styleClass="clear-button" text="Clear" />
+                                                <JFXButton fx:id="submitButton" onAction="#onSubmit" prefHeight="57.0" prefWidth="129.0" styleClass="submit-button" text="Submit" />
+                                            </children>
+                                        </HBox>
+                           </children>
+                        </VBox>
+                              </children>
+                          </VBox>
+                    </children>
+                </VBox>
+                  <VBox prefHeight="1080.0" prefWidth="75.0" styleClass="right-vbox" />
+            </children>
+        </HBox>
+    </children>
+</GridPane>

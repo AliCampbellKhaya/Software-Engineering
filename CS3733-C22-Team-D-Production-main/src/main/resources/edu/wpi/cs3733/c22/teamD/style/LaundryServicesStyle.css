@@ -1,0 +1,47 @@
+.jfx-check-box .box{
+    -fx-pref-height: 23;
+    -fx-pref-width: 23;
+    -jfx-selected-color: #4059a9;
+    -jfx-unselected-color: #4059a9;
+
+}
+
+.jfx-check-box .mark{
+    -fx-max-width: 25;
+    -fx-max-height: 20;
+}
+
+.jfx-check-box .text{
+    -fx-text-fill: black;
+    -fx-font-family: "Segoe UI Semilight";
+    -fx-font-size: 14pt;
+}
+
+.cancel-button-free {
+    -fx-font-size: 16pt;
+    -fx-border-color: #4059a9;
+    -fx-border-width: 2px;
+    -fx-text-fill: #4059a9;
+    -fx-font-family: "Segoe UI Semilight";
+}
+
+.submit-button-free {
+    -fx-font-size: 20pt;
+    -fx-background-color: #4059a9;
+    -fx-width: 400px;
+    -fx-height: 75px;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI Semilight";
+}
+
+.field-vbox{
+    -fx-spacing: 15pt;
+}
+
+.field-hbox{
+    -fx-spacing: 10pt;
+}
+
+.content-hbox{
+    -fx-translate-x: 55px;
+}

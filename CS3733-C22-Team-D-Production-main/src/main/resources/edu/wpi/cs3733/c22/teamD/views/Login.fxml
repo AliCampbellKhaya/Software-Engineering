@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<GridPane fx:id="content" style="-fx-background-color: #013A75;" styleClass="gridpane" stylesheets="@../style/LoginScreen.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.cs3733.c22.teamD.controllers.LoginController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <BorderPane>
+         <center>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="main-hbox">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="image-view-hospital">
+                     <children>
+                        <ImageView fx:id="image" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/background/Brigham-Womens-TO-USE.jpg" />
+                           </image>
+                        </ImageView>
+                        <Rectangle fill="#013a73cc" height="1081.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1634.0" />
+                        <VBox fx:id="whiteBox" fillWidth="false" prefHeight="650.0" prefWidth="450.0" styleClass="login-vbox" stylesheets="@../style/LoginScreen.css">
+                           <children>
+                              <Label fx:id="passwordDeniedLabel" prefHeight="37.0" prefWidth="498.0" styleClass="password-label" />
+                              <TextField fx:id="username" alignment="CENTER" prefHeight="40.0" prefWidth="294.0" promptText="User Name" styleClass="user-box" />
+                              <PasswordField fx:id="password" alignment="CENTER" promptText="Password" styleClass="password-box" />
+                              <JFXButton fx:id="login" buttonType="RAISED" styleClass="login-button" text="Log In" />
+                           </children>
+                        </VBox>
+                        <ImageView id="logo" fx:id="logo" fitHeight="266.0" fitWidth="228.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</GridPane>

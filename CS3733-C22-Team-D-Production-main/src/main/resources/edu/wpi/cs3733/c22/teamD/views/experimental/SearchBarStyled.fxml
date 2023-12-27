@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="gridpane" stylesheets="@../../style/Basic.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.cs3733.c22.teamD.controllers.experimental.SearchBarController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox layoutX="56.0" prefHeight="1080.0" prefWidth="1864.0" styleClass="main-hbox">
+         <children>
+            <VBox prefHeight="1080.0" prefWidth="1398.0" styleClass="left-vbox" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" styleClass="pane-title">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="641.0" styleClass="vbox-title">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Search Page" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-description" text="Can't find what you're looking for? Try here!" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0" styleClass="pane-body" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox layoutX="-374.0" layoutY="33.0" prefHeight="419.0" prefWidth="500.0" translateX="397.2" translateY="35.0">
+                           <children>
+                              <Text fx:id="errorText" fill="#ff0000" strokeType="OUTSIDE" strokeWidth="0.0" text="I'm sorry, I can't find what you are looking for. Did you spell it correctly?" visible="false">
+                                 <font>
+                                    <Font name="Leelawadee UI" size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <JFXListView fx:id="listView" onMouseClicked="#selectSearch" prefHeight="429.0" prefWidth="500.0" visible="false" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <TextField fx:id="searchBar" focusTraversable="false" layoutX="21.0" layoutY="13.0" maxHeight="217.0" onAction="#directSearch" onKeyReleased="#showList" prefHeight="50.0" prefWidth="500.0" promptText="search for...">
+                           <font>
+                              <Font name="Leelawadee UI" size="22.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</GridPane>

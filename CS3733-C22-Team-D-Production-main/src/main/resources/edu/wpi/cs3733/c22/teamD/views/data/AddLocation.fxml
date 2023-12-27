@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.cs3733.c22.teamD.controllers.data.popups.AddLocationPopupController">
+   <children>
+      <Text fill="#013a75" layoutX="79.0" layoutY="28.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a new location">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="17.0" layoutY="142.0" prefHeight="47.0" prefWidth="293.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="150.65579223632812" minWidth="10.0" prefWidth="62.591957092285156" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="245.52277374267578" minWidth="10.0" prefWidth="244.40804290771484" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label style="-fx-text-fill: #013A75;" text="Type:" />
+            <TextField fx:id="nodeTypeN" style="-fx-border-width: 0 0 1 0; -fx-border-color: #4d4d4d; -fx-background-color: transparent;" GridPane.columnIndex="1" />
+            <Label style="-fx-text-fill: #013A75;" text="Building:" GridPane.rowIndex="1" />
+            <TextField fx:id="buildingN" style="-fx-border-width: 0 0 1 0; -fx-border-color: #4d4d4d; -fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <JFXButton fx:id="submit" layoutX="17.0" layoutY="199.0" onAction="#createLocation" prefHeight="31.0" prefWidth="295.0" style="-fx-background-color: #013A75;" text="Create" textFill="WHITE" />
+      <VBox layoutX="16.0" layoutY="46.0" prefHeight="87.0" prefWidth="100.0">
+         <children>
+            <Label style="-fx-text-fill: #013A75;" text="ID:" />
+            <TextField fx:id="idNode" prefHeight="12.0" prefWidth="100.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #4d4d4d#4d4d4d; -fx-background-color: transparent;">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin></TextField>
+            <Label style="-fx-text-fill: #013A75;" text="Name:" />
+            <TextField fx:id="nameLong" style="-fx-border-width: 0 0 1 0; -fx-border-color: #4d4d4d; -fx-background-color: transparent;" />
+         </children>
+      </VBox>
+      <VBox layoutX="151.0" layoutY="45.0" prefHeight="87.0" prefWidth="150.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Label style="-fx-text-fill: #013A75;" text="Abbrev:" />
+                  <Label style="-fx-text-fill: #013A75;" text="Floor" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <TextField fx:id="nameShort" style="-fx-border-width: 1 1 2 1; -fx-border-color: #4d4d4d; -fx-background-color: transparent;" />
+                  <TextField fx:id="floorN" style="-fx-border-width: 1 1 2 1; -fx-border-color: #4d4d4d; -fx-background-color: transparent;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Label style="-fx-text-fill: #013A75;" text="XCoord" />
+                  <Label style="-fx-text-fill: #013A75;" text="YCoord" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <TextField style="-fx-border-width: 1 1 2 1; -fx-border-color: #4d4d4d; -fx-background-color: transparent;" fx:id="xCord" />
+                  <TextField fx:id="yCord" style="-fx-border-width: 1 1 2 1; -fx-border-color: #4d4d4d; -fx-background-color: transparent;" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

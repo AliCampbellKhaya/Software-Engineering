@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import java.net.URL?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.cs3733.c22.teamD.controllers.AddServiceRequestTraffic">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Pane accessibleRole="COMBO_BOX" prefHeight="800.0" prefWidth="1280.0" translateX="35.0" translateY="30.0">
+         <stylesheets>
+            <URL value="@../style/ServiceRequestTrafficPageStyle.css" />
+            <URL value="@../style/ServicePageStructure.css" />
+         </stylesheets>
+      </Pane>
+      <VBox prefHeight="800.0" prefWidth="1280.0" styleClass="vbox-main">
+         <children>
+            <Pane maxWidth="1230.0" prefHeight="300.0" prefWidth="1230.0" styleClass="cards-main">
+               <children>
+                  <Text layoutX="45.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service Requests Page" wrappingWidth="743.7366943359375">
+                     <font>
+                        <Font name="Leelawadee UI" size="42.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="808.0" prefWidth="1452.0" styleClass="cards-main">
+               <children>
+                  <VBox spacing="20.0" styleClass="service-button-vbox">
+                     <children>
+                        <JFXButton fx:id="MEDeliveryButton" alignment="CENTER" buttonType="RAISED" onAction="#navToMedicalEquipmentDeliveryRequest" prefHeight="65.0" prefWidth="665.0" styleClass="service-button" text="    Medical Equipment Delivery" textFill="#373737" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Semilight" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" styleClass="icon" translateX="14.0">
+                                 <image>
+                                    <Image url="@../images/hospital-plus.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="SanitationButton" alignment="CENTER" buttonType="RAISED" onAction="#navToSanitationServices" opacity="0.9" prefHeight="65.0" prefWidth="724.0" styleClass="service-button" text="  Sanitation" textFill="#373737" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Semilight" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" translateX="7.0">
+                                 <image>
+                                    <Image url="@../images/Sanitizer.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="ComputerServicesButton" alignment="BASELINE_LEFT" onAction="#navToComputerServices" opacity="0.9" prefHeight="65.0" prefWidth="776.0" styleClass="service-button" text="    Computer Services" textFill="#373737" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Semilight" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" styleClass="icon" translateX="5.0">
+                                 <image>
+                                    <Image url="@../images/monitor.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="InternalTransportButton" alignment="CENTER" buttonType="RAISED" onAction="#navToInternalTransport" prefHeight="65.0" prefWidth="665.0" styleClass="service-button" text="    Internal Transportation" textFill="#373737" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Semilight" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" styleClass="icon">
+                                 <image>
+                                    <Image url="@../images/stretcher.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="LaundryButton" alignment="CENTER" buttonType="RAISED" depthTest="DISABLE" onAction="#navToLaundry" prefHeight="65.0" prefWidth="711.0" styleClass="service-button" text="    Laundry" textFill="#373737" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Semilight" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" styleClass="icon">
+                                 <image>
+                                    <Image url="@../images/tag.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="other1Button" alignment="CENTER" buttonType="RAISED" onAction="#navToSecurityServices" opacity="0.9" prefHeight="65.0" prefWidth="776.0" styleClass="service-button" text="    Security" textFill="#373737" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Semilight" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" styleClass="icon">
+                                 <image>
+                                    <Image url="@../images/shield.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="medDeliveryButton" alignment="CENTER" buttonType="RAISED" onAction="#navToMedicineDelivery" opacity="0.9" prefHeight="65.0" prefWidth="724.0" styleClass="service-button" text="     Medicine Delivery" textFill="#373737" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Semilight" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="20.0" translateX="19.0">
+                                 <image>
+                                    <Image url="@../images/pill-bottle.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="facilMaintenanceButton" alignment="CENTER" buttonType="RAISED" onAction="#navToFacilities" opacity="0.9" prefHeight="65.0" prefWidth="724.0" styleClass="service-button" text="  Facilities Maintenance" textFill="#373737" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Semilight" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" translateX="9.0">
+                                 <image>
+                                    <Image url="@../images/maintenance.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <Text accessibleRole="BUTTON" fill="WHITE" layoutY="63.61198425292969" onMouseClicked="#navToMedicalEquipmentDeliveryRequest" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plus-sign" text="+">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Text>
+                  <Text accessibleRole="BUTTON" fill="WHITE" layoutY="136.81198120117188" onMouseClicked="#navToSanitationServices" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plus-sign" text="+">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Text>
+                  <Text accessibleRole="BUTTON" fill="WHITE" layoutY="214.01199340820312" onMouseClicked="#navToComputerServices" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plus-sign" text="+">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Text>
+                  <Text accessibleRole="BUTTON" fill="WHITE" layoutY="289.21197509765625" onMouseClicked="#navToInternalTransport" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plus-sign" text="+">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Text>
+                  <Text accessibleRole="BUTTON" fill="WHITE" layoutY="364.4119873046875" onMouseClicked="#navToLaundry" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plus-sign" text="+">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Text>
+                  <Text accessibleRole="BUTTON" fill="WHITE" layoutY="439.61199951171875" onMouseClicked="#navToSecurityServices" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plus-sign" text="+">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Text>
+                  <Text accessibleRole="BUTTON" fill="WHITE" layoutY="512.8119812011719" onMouseClicked="#navToMedicineDelivery" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plus-sign" text="+">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="jacobText1" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="name" text="Jacob Reiss" />
+                  <Text fx:id="niniText1" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="name" text="Nini Acquista" />
+                  <JFXToggleButton fx:id="toggleSwitch" layoutX="868.0" layoutY="500.0" onAction="#toggleNames" prefHeight="66.0" prefWidth="372.0" selected="true" size="22.0" styleClass="toggle-switch" text="Show Designers" toggleColor="#fafafa" toggleLineColor="#4059a9" />
+                  <Text fx:id="nickText1" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="name" text="Nicholas Hudgins" />
+                  <Text fx:id="jackieText1" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="name" text="Jacquelyn Lopez" />
+                  <Text fx:id="andyText1" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="name" text="Andy Strauss" />
+                  <Text fx:id="bridgetText1" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="name" text="Bridget Redgate" />
+                  <Text fx:id="aliText1" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="name" text="Ali Campbell" />
+                  <Text accessibleRole="BUTTON" fill="WHITE" layoutY="588.8119812011719" onMouseClicked="#navToFacilities" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plus-sign" text="+">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="ilyasText1" layoutY="582.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="name" text="Ilyas Salhi " />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../style/ServicePageNewUI.css" />
+      <URL value="@../style/ServiceRequestTrafficPageStyle.css" />
+   </stylesheets>
+</GridPane>

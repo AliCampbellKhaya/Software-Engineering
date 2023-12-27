@@ -1,0 +1,56 @@
+.table-view{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-font-size: 14;
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: transparent
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #013D7B;
+    -fx-border-color: #013D7B;
+    -fx-border-width: 0 0 2 0;
+}
+
+.table-view .scroll-bar * {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.table-view .table-cell{
+    -fx-padding: 8;
+}
+
+.table-row-cell:odd{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+.table-row-cell:even{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:cell-selection {
+    -fx-text-fill: black;
+}
+
+.table-row-cell:focused {
+    -fx-text-background-color: #000000;
+    -fx-background-color: #E5E5E5;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #E5E5E5;
+    -fx-text-background-color: #000000;
+}

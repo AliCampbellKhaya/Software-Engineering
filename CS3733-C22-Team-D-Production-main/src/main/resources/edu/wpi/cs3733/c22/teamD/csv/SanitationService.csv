@@ -1,0 +1,7 @@
+serviceID,serviceRequestType, creator_Employee,assigned_Employee,description,serviceStatus,urgency,initiatedTime,completedTime,location
+113456789,SanitationRequest,553746354,153746354,This is a description,INCOMPLETE,MED,Initiated time,completedTime,FHALL02201
+123455789,SanitationRequest,553746354,153746354,This is a description,COMPLETE,LOW,Initiated time,completedTime,FHALL02301
+133454789,SanitationRequest,553746354,153746354,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL02401
+143453889,SanitationRequest,553746354,153746354,This is a description,INCOMPLETE,HIGH,Initiated time,completedTime,FHALL02501
+153452989,SanitationRequest,553746354,153746354,This is a description,INCOMPLETE,LOW,Initiated time,completedTime,FHALL02601
+163451799,SanitationRequest,553746354,153746354,This is a description,COMPLETE,LOW,Initiated time,completedTime,FHALL02701

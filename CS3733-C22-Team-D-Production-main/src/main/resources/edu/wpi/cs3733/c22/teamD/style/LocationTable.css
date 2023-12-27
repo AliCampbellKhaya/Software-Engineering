@@ -1,0 +1,6 @@
+.right-vbox-locale {
+    -fx-pref-width: 1000px;
+    -fx-padding: 24;
+    -fx-spacing: 24;
+    -fx-background-color: #FFFFFF;
+}

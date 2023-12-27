@@ -1,0 +1,204 @@
+.vbox-main {
+    -fx-background-color:  #EBECF0;
+    -fx-padding: 25px;
+    -fx-spacing: 25px;
+    -fx-pref-width: 1280px;
+    -fx-pref-height: 800px;
+}
+
+.vbox-side {
+    -fx-background-color:  none;
+    -fx-padding: 25px;
+    -fx-spacing: 30px;
+}
+.back-image-side {
+    -fx-opacity: 30%;
+}
+
+.vbox-content {
+    -fx-pref-height: 450px;
+    -fx-pref-width: 300px;
+    -fx-padding: 15px;
+    -fx-spacing: 15px;
+}
+
+.cards-main {
+    -fx-background-color:  white;
+    -fx-border-color:  #EBECF0;
+    -fx-effect: dropshadow( two-pass-box, #BEBEBE , 2, 3  , 2, 2 );
+    -fx-pref-height: 800px;
+    -fx-pref-width: 1200px;
+}
+
+.cards-main-top {
+    -fx-background-color:  white;
+    -fx-border-color:  #EBECF0;
+    -fx-effect: dropshadow( two-pass-box, #BEBEBE , 2, 3  , 2, 2 );
+    -fx-pref-height: 300px;
+}
+
+.dialogue-pane {
+    -fx-alignment: right;
+}
+
+.main-request-box {
+    -fx-padding: 25px;
+    -fx-spacing: 25px;
+    -fx-pref-height: 550px;
+    -fx-pref-width: 750px;
+}
+.hbox-fields {
+    -fx-spacing: 50px;
+    -fx-padding: 25px;
+    -fx-pref-width: 800px;
+    -fx-pref-height: 450px;
+}
+
+.cards-side {
+    -fx-background-color:  white;
+
+    -fx-opacity: 85%;
+    -fx-background-radius: 2px;
+}
+
+.yellow-title-card {
+    -fx-fill:  #FBB03B;
+    -fx-opacity: 75%;
+    -fx-border-color:  #EBECF0;
+}
+
+.label-style {
+    -fx-font-size: 22pt;
+    -fx-font-family: "Leelawadee UI Semilight";
+    -fx-text-fill: #012D5A;
+}
+
+.service-box {
+    -fx-background-color: white;
+    -fx-border-color:  #EBECF0;
+    -fx-effect: dropshadow( two-pass-box, #BEBEBE , 4, 0 , 1, 1 );
+}
+
+.user-field {
+    -fx-background-color: #EBECF0;
+}
+
+.notif-pane {
+    -fx-background-color: #013D7B;
+}
+
+.main-frame-anchor {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color:  #013D7B;
+    -fx-height: 800px;
+    -fx-width: 1280px;
+}
+
+.stage-frame {
+    -fx-pref-height: 800px;
+    -fx-pref-width: 1222px;
+    -fx-translate-x: 58px;
+    -fx-translate-y: 0px;
+    -fx-padding: 25px;
+}
+
+.service-pane {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: white;
+    -fx-pref-width: 1150px;
+    -fx-pref-height: 740px;
+    -fx-alignment: center;
+    -fx-translate-x: 35px;
+    -fx-translate-y: 30px;
+}
+
+.title-pane {
+    -fx-height: 185px;
+    -fx-max-width: 575px;
+    -fx-padding: 50px;
+    -fx-translate-x: 0px;
+    -fx-translate-y: 0px;
+}
+
+.right-pane-notification-center {
+    -fx-height: 185px;
+    -fx-width: 575px;
+    -fx-padding: 50px;
+    -fx-translate-x: 0px;
+    -fx-translate-y: 0px;
+}
+
+.body-pane {
+    -fx-height:  555px;
+    -fx-width: 1150px;
+    -fx-translate-x: 0px;
+    -fx-translate-y: 185px;
+}
+
+.side-pane {
+    -fx-border-color: #FBC44E;
+    -fx-border-width: 1px 0 0 0;
+}
+
+.title {
+    -fx-font-size: 34pt;
+    -fx-font-family: "Segoe UI Black";
+    -fx-text-fill: #012D5A;
+    -fx-max-width: 520px;
+    -fx-translate-x: 0px;
+    -fx-translate-y: 0px;
+    -fx-content-display: center;
+}
+.general-text {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Semilight";
+    -fx-text-fill: #012D5A;
+}
+.label-style {
+    -fx-font-size: 18pt;
+    -fx-start-margin: 25px;
+    -fx-font-family: "Segoe UI Semilight";
+    -fx-text-fill: #012D5A;
+}
+.user-field {
+    -fx-max-height: 35px;
+}
+.cancel-button {
+    -fx-font-size: 16pt;
+    -fx-border-color: #4059a9;
+    -fx-border-width: 2px;
+    -fx-text-fill: #4059a9;
+    -fx-font-family: "Segoe UI Semilight";
+
+}
+.extra-box {
+
+    -fx-background-color: #EBECF0;
+    -fx-pref-width: 800px;
+}
+
+.submit-button {
+    -fx-font-size: 20pt;
+    -fx-background-color: #4059a9;
+
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI Semilight";
+}
+
+.sign-in {
+    -fx-font-size: 22pt;
+    -fx-background-color: #FBC44E;
+    -fx-text-fill: white;
+    -fx-font-family: "Open Sans";}
+
+.img-style {
+    -fx-background-radius: 4pt;
+}
+
+.jfx-text-box{
+    -fx-border-width: .5pt;
+    -fx-border-color: #4d4d4d;
+    -fx-background-color: transparent;
+}

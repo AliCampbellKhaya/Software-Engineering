@@ -1,0 +1,6 @@
+serviceID,serviceRequestType,creator_Employee,assigned_Employee,description,serviceStatus,urgency,initiatedTime,completedTime,location
+176,FacilitiesMaintenanceRequest,146486673,346486673,AC is not working,INCOMPLETE,LOW,Initiated time,completedTime,FHALL00901
+276,FacilitiesMaintenanceRequest,146486673,346486673,One of the lights is not working,COMPLETE,LOW,Initiated time,completedTime,FHALL00901
+376,FacilitiesMaintenanceRequest,236486673,346486673,The bed doesn't recline,INCOMPLETE,HIGH,Initiated time,completedTime,FHALL00901
+476,FacilitiesMaintenanceRequest,253746354,346486673,The curtains are torn,COMPLETE,LOW,Initiated time,completedTime,FHALL00901
+576,FacilitiesMaintenanceRequest,253746354,346486673,There's a weird smell from the vents,INCOMPLETE,MED,Initiated time,completedTime,FHALL00901

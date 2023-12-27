@@ -1,0 +1,1883 @@
+2022-02-21 00:46:12,600 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2022-02-21 00:46:13,488 [INFO] from play.api.Play in Thread-0 - Application started (Prod) (no global state)
+2022-02-21 00:46:14,173 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Enabling HTTP/2 on Akka HTTP server...
+2022-02-21 00:46:14,173 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /[0:0:0:0:0:0:0:0]:8080
+2022-02-21 00:46:14,509 [WARN] from javafx in application-akka.actor.default-dispatcher-4 - Unsupported JavaFX configuration: classes were loaded from 'unnamed module @2b5dff6f'
+2022-02-21 00:46:15,404 [INFO] from com.jpro.activity in application-akka.actor.default-dispatcher-4 - Starting the server
+2022-02-21 00:46:15,405 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-4 -  *** Starting JPro: https://www.jpro.one/ ***
+2022-02-21 00:46:15,405 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-4 - OS: Mac OS X
+2022-02-21 00:46:15,413 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-4 - JPro: 2021.2.3
+2022-02-21 00:46:15,413 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-4 - Java version: 17.0.1
+2022-02-21 00:46:15,413 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-4 - JVM: 17.0.1 Microsoft
+2022-02-21 00:46:15,414 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-4 - JavaFX jar: file:/Users/ilyas/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/17.0.1.2-jpro+0/36509795071392ea26de4b46974d5eb36c5be957/javafx-graphics-17.0.1.2-jpro+0-mac.jar
+2022-02-21 00:46:15,426 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-4 - redirected OUT / ERR
+2022-02-21 00:46:15,426 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-4 - installed SLF4JBridge
+2022-02-21 00:46:15,464 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 17.0.1.2-jpro+0-2022-01-27-232932
+2022-02-21 00:46:15,468 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-4 - finished init!
+2022-02-21 00:46:16,519 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - application requested: !default
+2022-02-21 00:46:16,533 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - Creating Application: !default
+2022-02-21 00:46:16,543 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:46:16,547 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - host          localhost:8080
+2022-02-21 00:46:16,548 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - uri           /app/ws/!default
+2022-02-21 00:46:16,742 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@2e219b3b with JPro. edu.wpi.cs3733.c22.teamD.Main@2e219b3b does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:46:21,583 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - application requested: !default
+2022-02-21 00:46:21,587 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - Creating Application: !default
+2022-02-21 00:46:21,591 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:46:21,593 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - host          localhost:8080
+2022-02-21 00:46:21,593 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - uri           /app/ws/!default
+2022-02-21 00:46:21,630 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@192b5c9e with JPro. edu.wpi.cs3733.c22.teamD.Main@192b5c9e does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:46:26,676 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - application requested: !default
+2022-02-21 00:46:26,678 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - Creating Application: !default
+2022-02-21 00:46:26,679 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:46:26,679 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - host          localhost:8080
+2022-02-21 00:46:26,679 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - uri           /app/ws/!default
+2022-02-21 00:46:26,717 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@7f32cb5d with JPro. edu.wpi.cs3733.c22.teamD.Main@7f32cb5d does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:46:30,399 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: !default
+2022-02-21 00:46:30,402 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: !default
+2022-02-21 00:46:30,404 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:46:30,407 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2022-02-21 00:46:30,407 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/ws/!default
+2022-02-21 00:46:30,445 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@3ed14456 with JPro. edu.wpi.cs3733.c22.teamD.Main@3ed14456 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:46:35,495 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - application requested: !default
+2022-02-21 00:46:35,496 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - Creating Application: !default
+2022-02-21 00:46:35,497 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:46:35,497 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - host          localhost:8080
+2022-02-21 00:46:35,497 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - uri           /app/ws/!default
+2022-02-21 00:46:35,534 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@1a24a044 with JPro. edu.wpi.cs3733.c22.teamD.Main@1a24a044 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:46:40,602 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: !default
+2022-02-21 00:46:40,603 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: !default
+2022-02-21 00:46:40,604 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:46:40,604 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          localhost:8080
+2022-02-21 00:46:40,604 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/ws/!default
+2022-02-21 00:46:40,641 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@71b7f85 with JPro. edu.wpi.cs3733.c22.teamD.Main@71b7f85 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:46:45,686 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: !default
+2022-02-21 00:46:45,691 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: !default
+2022-02-21 00:46:45,691 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:46:45,691 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2022-02-21 00:46:45,691 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/ws/!default
+2022-02-21 00:46:45,728 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@7a03ea6b with JPro. edu.wpi.cs3733.c22.teamD.Main@7a03ea6b does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:46:50,754 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: !default
+2022-02-21 00:46:50,755 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: !default
+2022-02-21 00:46:50,757 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:46:50,758 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2022-02-21 00:46:50,758 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/ws/!default
+2022-02-21 00:46:50,780 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@5829d115 with JPro. edu.wpi.cs3733.c22.teamD.Main@5829d115 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:46:55,806 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - application requested: !default
+2022-02-21 00:46:55,807 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - Creating Application: !default
+2022-02-21 00:46:55,808 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:46:55,809 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - host          localhost:8080
+2022-02-21 00:46:55,809 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - uri           /app/ws/!default
+2022-02-21 00:46:55,835 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@75f0dca1 with JPro. edu.wpi.cs3733.c22.teamD.Main@75f0dca1 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:47:00,866 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - application requested: !default
+2022-02-21 00:47:00,867 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - Creating Application: !default
+2022-02-21 00:47:00,867 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:47:00,867 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - host          localhost:8080
+2022-02-21 00:47:00,867 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - uri           /app/ws/!default
+2022-02-21 00:47:00,893 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@1f26a901 with JPro. edu.wpi.cs3733.c22.teamD.Main@1f26a901 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:47:05,936 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - application requested: !default
+2022-02-21 00:47:05,937 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - Creating Application: !default
+2022-02-21 00:47:05,938 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:47:05,938 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - host          localhost:8080
+2022-02-21 00:47:05,938 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - uri           /app/ws/!default
+2022-02-21 00:47:05,965 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@19dee86 with JPro. edu.wpi.cs3733.c22.teamD.Main@19dee86 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:47:11,005 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - application requested: !default
+2022-02-21 00:47:11,005 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - Creating Application: !default
+2022-02-21 00:47:11,006 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:47:11,007 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - host          localhost:8080
+2022-02-21 00:47:11,007 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - uri           /app/ws/!default
+2022-02-21 00:47:11,037 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@c6a7bc1 with JPro. edu.wpi.cs3733.c22.teamD.Main@c6a7bc1 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:47:16,075 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: !default
+2022-02-21 00:47:16,076 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: !default
+2022-02-21 00:47:16,076 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:47:16,076 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          localhost:8080
+2022-02-21 00:47:16,076 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/ws/!default
+2022-02-21 00:47:16,107 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@127e40a0 with JPro. edu.wpi.cs3733.c22.teamD.Main@127e40a0 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:47:21,132 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: !default
+2022-02-21 00:47:21,133 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: !default
+2022-02-21 00:47:21,133 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:47:21,133 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          localhost:8080
+2022-02-21 00:47:21,134 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/ws/!default
+2022-02-21 00:47:21,165 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@317c5dc1 with JPro. edu.wpi.cs3733.c22.teamD.Main@317c5dc1 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:47:26,039 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - application requested: !default
+2022-02-21 00:47:26,054 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - Creating Application: !default
+2022-02-21 00:47:26,054 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:47:26,054 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - host          localhost:8080
+2022-02-21 00:47:26,054 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - uri           /app/ws/!default
+2022-02-21 00:47:26,113 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@32034247 with JPro. edu.wpi.cs3733.c22.teamD.Main@32034247 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:47:31,184 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - application requested: !default
+2022-02-21 00:47:31,189 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - Creating Application: !default
+2022-02-21 00:47:31,189 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:47:31,189 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - host          localhost:8080
+2022-02-21 00:47:31,189 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - uri           /app/ws/!default
+2022-02-21 00:47:31,211 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@2b5983d4 with JPro. edu.wpi.cs3733.c22.teamD.Main@2b5983d4 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:47:35,976 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: !default
+2022-02-21 00:47:35,977 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: !default
+2022-02-21 00:47:35,978 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:47:35,978 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          localhost:8080
+2022-02-21 00:47:35,978 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/ws/!default
+2022-02-21 00:47:36,029 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@1e762fca with JPro. edu.wpi.cs3733.c22.teamD.Main@1e762fca does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:47:41,049 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: !default
+2022-02-21 00:47:41,049 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: !default
+2022-02-21 00:47:41,049 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:47:41,049 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          localhost:8080
+2022-02-21 00:47:41,049 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/ws/!default
+2022-02-21 00:47:41,066 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@c6560e4 with JPro. edu.wpi.cs3733.c22.teamD.Main@c6560e4 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:47:46,086 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: !default
+2022-02-21 00:47:46,086 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: !default
+2022-02-21 00:47:46,086 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:47:46,086 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          localhost:8080
+2022-02-21 00:47:46,086 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/ws/!default
+2022-02-21 00:47:46,123 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@7cd869df with JPro. edu.wpi.cs3733.c22.teamD.Main@7cd869df does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:47:51,147 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - application requested: !default
+2022-02-21 00:47:51,148 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - Creating Application: !default
+2022-02-21 00:47:51,149 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:47:51,149 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - host          localhost:8080
+2022-02-21 00:47:51,149 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - uri           /app/ws/!default
+2022-02-21 00:47:51,163 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@27b4fcd5 with JPro. edu.wpi.cs3733.c22.teamD.Main@27b4fcd5 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:47:56,187 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - application requested: !default
+2022-02-21 00:47:56,188 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - Creating Application: !default
+2022-02-21 00:47:56,188 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:47:56,188 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - host          localhost:8080
+2022-02-21 00:47:56,188 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - uri           /app/ws/!default
+2022-02-21 00:47:56,217 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@17dfa50d with JPro. edu.wpi.cs3733.c22.teamD.Main@17dfa50d does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:48:01,243 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: !default
+2022-02-21 00:48:01,244 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: !default
+2022-02-21 00:48:01,244 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:48:01,244 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2022-02-21 00:48:01,244 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/ws/!default
+2022-02-21 00:48:01,259 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@7d011cf7 with JPro. edu.wpi.cs3733.c22.teamD.Main@7d011cf7 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:48:06,313 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - application requested: !default
+2022-02-21 00:48:06,313 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - Creating Application: !default
+2022-02-21 00:48:06,313 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:48:06,313 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - host          localhost:8080
+2022-02-21 00:48:06,313 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - uri           /app/ws/!default
+2022-02-21 00:48:06,464 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@6b690478 with JPro. edu.wpi.cs3733.c22.teamD.Main@6b690478 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:48:11,498 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - application requested: !default
+2022-02-21 00:48:11,498 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - Creating Application: !default
+2022-02-21 00:48:11,498 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:48:11,498 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - host          localhost:8080
+2022-02-21 00:48:11,498 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - uri           /app/ws/!default
+2022-02-21 00:48:11,516 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@f420ea with JPro. edu.wpi.cs3733.c22.teamD.Main@f420ea does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 00:48:16,535 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - application requested: !default
+2022-02-21 00:48:16,536 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - Creating Application: !default
+2022-02-21 00:48:16,536 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 00:48:16,537 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - host          localhost:8080
+2022-02-21 00:48:16,537 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - uri           /app/ws/!default
+2022-02-21 00:48:16,558 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@67691d96 with JPro. edu.wpi.cs3733.c22.teamD.Main@67691d96 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:12:35,551 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - application requested: !default
+2022-02-21 01:12:35,554 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - Creating Application: !default
+2022-02-21 01:12:35,555 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:12:35,561 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - host          localhost:8080
+2022-02-21 01:12:35,561 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - uri           /app/ws/!default
+2022-02-21 01:12:35,584 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@6c0732d4 with JPro. edu.wpi.cs3733.c22.teamD.Main@6c0732d4 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:14:00,876 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-27 - application requested: !default
+2022-02-21 01:14:00,879 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-27 - Creating Application: !default
+2022-02-21 01:14:00,880 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-27 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:14:00,884 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-27 - host          localhost:8080
+2022-02-21 01:14:00,885 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-27 - uri           /app/ws/!default
+2022-02-21 01:14:00,911 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@1056fc9 with JPro. edu.wpi.cs3733.c22.teamD.Main@1056fc9 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:15:12,660 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - application requested: !default
+2022-02-21 01:15:12,664 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - Creating Application: !default
+2022-02-21 01:15:12,664 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:15:12,665 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - host          localhost:8080
+2022-02-21 01:15:12,665 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - uri           /app/ws/!default
+2022-02-21 01:15:12,688 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@7ba87118 with JPro. edu.wpi.cs3733.c22.teamD.Main@7ba87118 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:15:43,956 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - application requested: !default
+2022-02-21 01:15:43,957 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - Creating Application: !default
+2022-02-21 01:15:43,957 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:15:43,957 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - host          localhost:8080
+2022-02-21 01:15:43,957 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-28 - uri           /app/ws/!default
+2022-02-21 01:15:43,982 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@151c2bc7 with JPro. edu.wpi.cs3733.c22.teamD.Main@151c2bc7 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$2(ApplicationStarter.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at com.jpro.internal.config.ApplicationStarter$.appor$lzycompute$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.appor$1(ApplicationStarter.scala:54)
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$getApplication$3(ApplicationStarter.scala:55)
+	at scala.Option.orElse(Option.scala:447)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:55)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:36:26,482 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2022-02-21 01:36:27,369 [INFO] from play.api.Play in Thread-0 - Application started (Prod) (no global state)
+2022-02-21 01:36:28,095 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Enabling HTTP/2 on Akka HTTP server...
+2022-02-21 01:36:28,096 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /[0:0:0:0:0:0:0:0]:8080
+2022-02-21 01:36:28,361 [INFO] from com.jpro.activity in application-akka.actor.default-dispatcher-7 - Starting the server
+2022-02-21 01:36:28,363 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 -  *** Starting JPro: https://www.jpro.one/ ***
+2022-02-21 01:36:28,363 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - OS: Mac OS X
+2022-02-21 01:36:28,388 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - JPro: 2021.2.2
+2022-02-21 01:36:28,388 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - Java version: 17.0.1
+2022-02-21 01:36:28,388 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - JVM: 17.0.1 Microsoft
+2022-02-21 01:36:28,391 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - JavaFX jar: file:/Users/ilyas/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/17.0.1.1-jpro+0/4bea52d4d90e3219d69229e1d235efc17296d40/javafx-graphics-17.0.1.1-jpro+0-mac.jar
+2022-02-21 01:36:28,409 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - redirected OUT / ERR
+2022-02-21 01:36:28,409 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - installed SLF4JBridge
+2022-02-21 01:36:28,526 [WARN] from javafx in application-akka.actor.default-dispatcher-7 - Unsupported JavaFX configuration: classes were loaded from 'unnamed module @7b0d61a1'
+2022-02-21 01:36:29,364 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - finished init!
+2022-02-21 01:36:29,365 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 17.0.1.1-jpro+0-2021-11-29-151228
+2022-02-21 01:36:30,351 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: 0!default
+2022-02-21 01:36:30,364 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: 0!default
+2022-02-21 01:36:30,366 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:36:30,368 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2022-02-21 01:36:30,368 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/0!default
+2022-02-21 01:36:30,556 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@3e830dd4 with JPro. edu.wpi.cs3733.c22.teamD.Main@3e830dd4 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:36:35,360 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: 0!default
+2022-02-21 01:36:35,364 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: 0!default
+2022-02-21 01:36:35,366 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:36:35,368 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2022-02-21 01:36:35,368 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/0!default
+2022-02-21 01:36:35,414 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@560ff65c with JPro. edu.wpi.cs3733.c22.teamD.Main@560ff65c does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:36:40,465 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - application requested: 0!default
+2022-02-21 01:36:40,466 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - Creating Application: 0!default
+2022-02-21 01:36:40,466 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:36:40,466 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - host          localhost:8080
+2022-02-21 01:36:40,466 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - uri           /app/0!default
+2022-02-21 01:36:40,498 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@1d50bc73 with JPro. edu.wpi.cs3733.c22.teamD.Main@1d50bc73 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:36:45,550 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: 0!default
+2022-02-21 01:36:45,551 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: 0!default
+2022-02-21 01:36:45,551 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:36:45,551 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          localhost:8080
+2022-02-21 01:36:45,551 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/0!default
+2022-02-21 01:36:45,590 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@1791e39 with JPro. edu.wpi.cs3733.c22.teamD.Main@1791e39 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:36:50,642 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - application requested: 0!default
+2022-02-21 01:36:50,643 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - Creating Application: 0!default
+2022-02-21 01:36:50,643 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:36:50,643 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - host          localhost:8080
+2022-02-21 01:36:50,643 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-12 - uri           /app/0!default
+2022-02-21 01:36:50,695 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@23e0302c with JPro. edu.wpi.cs3733.c22.teamD.Main@23e0302c does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:36:55,744 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: 0!default
+2022-02-21 01:36:55,748 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: 0!default
+2022-02-21 01:36:55,748 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:36:55,750 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          localhost:8080
+2022-02-21 01:36:55,750 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/0!default
+2022-02-21 01:36:55,780 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@5d1bb1ef with JPro. edu.wpi.cs3733.c22.teamD.Main@5d1bb1ef does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:36:55,834 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: 0!default
+2022-02-21 01:36:55,835 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: 0!default
+2022-02-21 01:36:55,835 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:36:55,837 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          localhost:8080
+2022-02-21 01:36:55,837 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/0!default
+2022-02-21 01:36:55,890 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@5a4c1222 with JPro. edu.wpi.cs3733.c22.teamD.Main@5a4c1222 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:39:19,366 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2022-02-21 01:39:20,193 [INFO] from play.api.Play in Thread-0 - Application started (Prod) (no global state)
+2022-02-21 01:39:20,804 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Enabling HTTP/2 on Akka HTTP server...
+2022-02-21 01:39:20,805 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /[0:0:0:0:0:0:0:0]:8080
+2022-02-21 01:39:21,004 [INFO] from com.jpro.activity in application-akka.actor.default-dispatcher-7 - Starting the server
+2022-02-21 01:39:21,005 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 -  *** Starting JPro: https://www.jpro.one/ ***
+2022-02-21 01:39:21,005 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - OS: Mac OS X
+2022-02-21 01:39:21,013 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - JPro: 2021.2.2
+2022-02-21 01:39:21,013 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - Java version: 17.0.1
+2022-02-21 01:39:21,013 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - JVM: 17.0.1 Microsoft
+2022-02-21 01:39:21,015 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - JavaFX jar: file:/Users/ilyas/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/17.0.1.1-jpro+0/4bea52d4d90e3219d69229e1d235efc17296d40/javafx-graphics-17.0.1.1-jpro+0-mac.jar
+2022-02-21 01:39:21,024 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - redirected OUT / ERR
+2022-02-21 01:39:21,024 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - installed SLF4JBridge
+2022-02-21 01:39:21,165 [WARN] from javafx in application-akka.actor.default-dispatcher-7 - Unsupported JavaFX configuration: classes were loaded from 'unnamed module @5a16f04f'
+2022-02-21 01:39:21,580 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-7 - finished init!
+2022-02-21 01:39:21,582 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 17.0.1.1-jpro+0-2021-11-29-151228
+2022-02-21 01:39:22,122 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - application requested: 0!default
+2022-02-21 01:39:22,141 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - Creating Application: 0!default
+2022-02-21 01:39:22,144 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:39:22,144 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - host          localhost:8080
+2022-02-21 01:39:22,144 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - uri           /app/0!default
+2022-02-21 01:39:22,357 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@7c30fdbc with JPro. edu.wpi.cs3733.c22.teamD.Main@7c30fdbc does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:39:27,062 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - application requested: 0!default
+2022-02-21 01:39:27,064 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - Creating Application: 0!default
+2022-02-21 01:39:27,064 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:39:27,065 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - host          localhost:8080
+2022-02-21 01:39:27,067 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - uri           /app/0!default
+2022-02-21 01:39:27,093 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@527fe7ae with JPro. edu.wpi.cs3733.c22.teamD.Main@527fe7ae does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:39:32,141 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - application requested: 0!default
+2022-02-21 01:39:32,141 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - Creating Application: 0!default
+2022-02-21 01:39:32,142 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:39:32,142 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - host          localhost:8080
+2022-02-21 01:39:32,142 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - uri           /app/0!default
+2022-02-21 01:39:32,168 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@50cb4bfa with JPro. edu.wpi.cs3733.c22.teamD.Main@50cb4bfa does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:39:37,213 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: 0!default
+2022-02-21 01:39:37,213 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: 0!default
+2022-02-21 01:39:37,214 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:39:37,214 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2022-02-21 01:39:37,215 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/0!default
+2022-02-21 01:39:37,252 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@2545291d with JPro. edu.wpi.cs3733.c22.teamD.Main@2545291d does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:39:42,310 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - application requested: 0!default
+2022-02-21 01:39:42,310 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - Creating Application: 0!default
+2022-02-21 01:39:42,313 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:39:42,313 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - host          localhost:8080
+2022-02-21 01:39:42,313 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - uri           /app/0!default
+2022-02-21 01:39:42,358 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@23cb3eb3 with JPro. edu.wpi.cs3733.c22.teamD.Main@23cb3eb3 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:39:47,430 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - application requested: 0!default
+2022-02-21 01:39:47,433 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - Creating Application: 0!default
+2022-02-21 01:39:47,433 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:39:47,434 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - host          localhost:8080
+2022-02-21 01:39:47,434 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-11 - uri           /app/0!default
+2022-02-21 01:39:47,461 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@2c0953cf with JPro. edu.wpi.cs3733.c22.teamD.Main@2c0953cf does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:39:52,509 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - application requested: 0!default
+2022-02-21 01:39:52,510 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - Creating Application: 0!default
+2022-02-21 01:39:52,511 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:39:52,512 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - host          localhost:8080
+2022-02-21 01:39:52,512 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - uri           /app/0!default
+2022-02-21 01:39:52,563 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@7e8b9d56 with JPro. edu.wpi.cs3733.c22.teamD.Main@7e8b9d56 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:39:57,613 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - application requested: 0!default
+2022-02-21 01:39:57,613 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - Creating Application: 0!default
+2022-02-21 01:39:57,613 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:39:57,614 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - host          localhost:8080
+2022-02-21 01:39:57,614 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-7 - uri           /app/0!default
+2022-02-21 01:39:57,649 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@71a5e114 with JPro. edu.wpi.cs3733.c22.teamD.Main@71a5e114 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:40:02,689 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - application requested: 0!default
+2022-02-21 01:40:02,690 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - Creating Application: 0!default
+2022-02-21 01:40:02,691 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:40:02,693 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - host          localhost:8080
+2022-02-21 01:40:02,693 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - uri           /app/0!default
+2022-02-21 01:40:02,722 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@52b2450b with JPro. edu.wpi.cs3733.c22.teamD.Main@52b2450b does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 01:40:07,759 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - application requested: 0!default
+2022-02-21 01:40:07,759 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - Creating Application: 0!default
+2022-02-21 01:40:07,759 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 01:40:07,760 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - host          localhost:8080
+2022-02-21 01:40:07,760 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - uri           /app/0!default
+2022-02-21 01:40:07,784 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@44e0bb8f with JPro. edu.wpi.cs3733.c22.teamD.Main@44e0bb8f does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 13:59:41,806 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-16 - application requested: 0!default
+2022-02-21 13:59:41,810 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-16 - Creating Application: 0!default
+2022-02-21 13:59:41,811 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-16 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 13:59:41,811 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-16 - host          localhost:8080
+2022-02-21 13:59:41,811 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-16 - uri           /app/0!default
+2022-02-21 13:59:41,863 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@32235dd0 with JPro. edu.wpi.cs3733.c22.teamD.Main@32235dd0 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-02-21 13:59:42,345 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - application requested: 0!default
+2022-02-21 13:59:42,347 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - Creating Application: 0!default
+2022-02-21 13:59:42,347 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - remoteAddress 0:0:0:0:0:0:0:1
+2022-02-21 13:59:42,349 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - host          localhost:8080
+2022-02-21 13:59:42,349 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-15 - uri           /app/0!default
+2022-02-21 13:59:42,370 [ERROR] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - JavaFXStreamer - got Exception: 
+java.lang.Exception: Can't start edu.wpi.cs3733.c22.teamD.Main@33157fc7 with JPro. edu.wpi.cs3733.c22.teamD.Main@33157fc7 does not extend javafx.application.Application
+	at com.jpro.internal.config.ApplicationStarter$.$anonfun$startApplication$2(ApplicationStarter.scala:116)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX(CoreTesting.scala:21)
+	at simplefx.cores.interfaces.parts.testing.CoreTesting.inFX$(CoreTesting.scala:18)
+	at simplefx.cores.standard.Core.inFX(Core.scala:9)
+	at com.jpro.internal.config.ApplicationStarter$.startApplication(ApplicationStarter.scala:111)
+	at com.jpro.internal.config.ApplicationStarter$.requestApplication(ApplicationStarter.scala:94)
+	at com.jpro.internal.config.ApplicationStarter$.getApplication(ApplicationStarter.scala:60)
+	at com.jpro.internal.communicator.ViewImpl.<init>(ViewImpl.scala:30)
+	at com.jpro.internal.server.ViewByActor.<init>(ViewSerializerActor.scala:114)
+	at com.jpro.internal.server.ViewSerializerActor$$anonfun$receive$2$$anonfun$applyOrElse$1.$anonfun$applyOrElse$2(ViewSerializerActor.scala:69)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.util.Predef$.$anonfun$runInAndBlock$1(Predef.scala:183)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$0(AnimationTimer.java:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:57)
+	at com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:356)
+	at com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:266)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:581)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:565)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:558)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$12(QuantumToolkit.java:359)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.base/java.lang.Thread.run(Thread.java:833)

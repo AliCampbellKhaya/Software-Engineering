@@ -1,0 +1,10 @@
+
+.hbox-main {
+    -fx-spacing: 30pt;
+    -fx-translate-x: 35px;
+    -fx-translate-y: 35px;
+
+    -fx-pref-width: 620px;
+    -fx-max-height: 375px;
+    -fx-padding: 20pt;
+}

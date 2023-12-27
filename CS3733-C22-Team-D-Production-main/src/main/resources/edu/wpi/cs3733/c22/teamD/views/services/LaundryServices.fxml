@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="gridpane" stylesheets="@../../style/Basic.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.cs3733.c22.teamD.controllers.services.LaundryServicesController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <HBox layoutX="56.0" prefHeight="1080.0" prefWidth="1864.0" styleClass="main-hbox">
+         <children>
+            <VBox prefHeight="1080.0" prefWidth="1398.0" styleClass="left-vbox">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="641.0" styleClass="vbox-title">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Laundry Services" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-description" text="This is the description ..." />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="869.0" styleClass="body-vbox" VBox.vgrow="ALWAYS">
+                     <children>
+                        <AnchorPane styleClass="yellow-card">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="yellow-pane-text" text="Please fill out all required fields" />
+                           </children>
+                        </AnchorPane>
+                        <HBox alignment="CENTER" prefHeight="333.0" prefWidth="866.0" styleClass="hbox-fields" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="285.0" prefWidth="298.0" styleClass="field-vbox">
+                                 <children>
+                                    <VBox prefHeight="88.0" prefWidth="329.0" spacing="5.0">
+                                       <children>
+                                          <Text fill="#012d5a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-style" text="Please select an option:" wrappingWidth="312.5367431640625">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Text>
+                                          <JFXCheckBox fx:id="laundryPickupCheckBox" checkedColor="#4059a9" onAction="#disableCheckBoxes" onKeyReleased="#enableSubmitButton" styleClass="jfx-check-box" text="Request laundry pickup" unCheckedColor="#4059a9" />
+                                          <JFXCheckBox fx:id="laundryDeliveryCheckBox" checkedColor="#4059a9" onAction="#disableCheckBoxes" onKeyReleased="#enableSubmitButton" text="Request laundry delivery" unCheckedColor="#4059a9" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox>
+                                       <children>
+                                          <Text fill="#012d5a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-style" text="Assigned To:">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <JFXComboBox fx:id="assignTo" accessibleRole="TEXT_FIELD" onAction="#enableSubmitButton" prefHeight="29.0" prefWidth="250.0" styleClass="user-field" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </padding>
+                                    </VBox>
+                                    <Group>
+                                       <children>
+                                          <Text fill="#012d5a" layoutX="10.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-style" text="Please select an option: ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <JFXCheckBox fx:id="bedLinensCheckBox" checkedColor="#4059a9" layoutX="10.0" layoutY="33.5" onAction="#enableSubmitButton" text="Bed Linens" unCheckedColor="#4059a9" />
+                                          <JFXCheckBox fx:id="patientGownsCheckBox" checkedColor="#4059a9" layoutX="10.0" layoutY="56.5" onAction="#enableSubmitButton" text="Patient Gowns" unCheckedColor="#4059a9" />
+                                          <JFXCheckBox fx:id="scrubsCheckBox" checkedColor="#4059a9" layoutX="10.0" layoutY="79.5" onAction="#enableSubmitButton" text="Scrubs" unCheckedColor="#4059a9" />
+                                          <JFXCheckBox fx:id="drapesCheckBox" checkedColor="#4059a9" layoutX="10.0" layoutY="102.5" onAction="#enableSubmitButton" text="Drapes" unCheckedColor="#4059a9" />
+                                          <HBox alignment="CENTER" layoutX="10.0" layoutY="125.5" spacing="3.0">
+                                             <children>
+                                                <JFXCheckBox fx:id="otherCheckBox" checkedColor="#4059a9" onAction="#enableOtherTextField" text="Other (Please specify)" unCheckedColor="#4059a9" />
+                                                <TextField fx:id="otherField" disable="true" onKeyReleased="#enableSubmitButton" prefHeight="29.0" prefWidth="150.0" style="-fx-border-color: #012D5A;">
+                                                   <HBox.margin>
+                                                      <Insets left="12.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </Group>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="262.0" prefWidth="434.0" spacing="5.0">
+                                 <children>
+                                    <Group>
+                                       <children>
+                                          <Text fill="#012d5a" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-style" text="Location of request:">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <JFXComboBox fx:id="locationCombo" accessibleRole="TEXT_FIELD" layoutY="32.5" onAction="#enableSubmitButton" prefHeight="29.0" prefWidth="250.0" styleClass="user-field" />
+                                       </children>
+                                    </Group>
+                                    <VBox spacing="4.0">
+                                       <children>
+                                          <Label styleClass="label-style" text="Urgency:">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXComboBox fx:id="urgencyField" onAction="#enableSubmitButton" prefHeight="30.0" prefWidth="416.0" styleClass="user-field" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="8.0" right="8.0" />
+                                       </padding>
+                                    </VBox>
+                                    <JFXTextArea fx:id="extraBox" styleClass="extra-box" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" styleClass="button-hbox">
+                           <children>
+                              <JFXButton fx:id="clear" onAction="#onClear" styleClass="clear-button" text="Clear" />
+                              <JFXButton fx:id="submit" onAction="#onSubmit" prefHeight="57.0" prefWidth="129.0" styleClass="submit-button" text="Submit" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="1080.0" prefWidth="466.0" styleClass="right-vbox" />
+         </children>
+      </HBox>
+   </children>
+</GridPane>

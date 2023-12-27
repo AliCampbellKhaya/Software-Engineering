@@ -1,0 +1,14 @@
+employeeID,firstName,lastName,phoneNumber,job
+0,default,default,1111111,default
+146486673,FirstName,LastName,1111111111,Doctor
+236486673,John,Maxwell,6175641223,nurse
+346486673,Maria,Smith,6175141245,nurse
+446486673,Julieta,Rose,6175767245,nurse
+546486673,Julieta2,Rose2,6175767245,nurse
+646486673,Julieta3,Rose3,6175767245,nurse
+153746354,First2,Last2,1111111111,Doctor
+253746354,John2,Maxwell2,6175641223,nurse
+35374635,Maria2,Smith2,6175141245,nurse
+353746354,Julieta3,Rose3,6175767245,nurse
+553746354,Julieta4,Rose4,6175767245,nurse
+653746354,Julieta5,Rose5,6175767245,nurse
